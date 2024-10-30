@@ -79,7 +79,7 @@ html, body {
   background-color: #ff985a; 
   border-radius: 50%; 
   transform: translate(-50%, -50%); 
-  z-index: -1;      
+  z-index: -4;      
 }
 
 .top-left-blob {
@@ -87,6 +87,28 @@ html, body {
   background-color: #9caf88; 
   position: absolute; 
   z-index: -1; 
+  top: -350px; 
+  left: -200px; 
+  width: 900px;
+  height: 500px;
+}
+
+.two-top-left-blob {
+  border-radius: 65% 35% 65% 35% / 28% 26% 74% 72%;
+  background-color: #c2d1b6; 
+  position: absolute; 
+  z-index: -2; 
+  top: -300px; 
+  left: -200px; 
+  width: 900px;
+  height: 500px;
+}
+
+.three-top-left-blob {
+  border-radius: 65% 35% 65% 35% / 28% 26% 74% 72%;
+  background-color: #e1eadb; 
+  position: absolute; 
+  z-index: -3; 
   top: -250px; 
   left: -200px; 
   width: 900px;
@@ -98,6 +120,28 @@ html, body {
   background-color: #9caf88; 
   position: absolute; 
   z-index: -1; 
+  bottom: -600px;
+  right: -100px;
+  width: 800px; 
+  height: 700px;
+}
+
+.two-bottom-right-blob {
+  border-radius: 78% 22% 0% 100% / 50% 26% 74% 50% ;
+  background-color: #c2d1b6;
+  position: absolute; 
+  z-index: -2; 
+  bottom: -550px;
+  right: -100px;
+  width: 800px; 
+  height: 700px;
+}
+
+.three-bottom-right-blob {
+  border-radius: 78% 22% 0% 100% / 50% 26% 74% 50% ;
+  background-color: #e1eadb;
+  position: absolute; 
+  z-index: -3; 
   bottom: -500px;
   right: -100px;
   width: 800px; 
