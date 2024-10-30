@@ -1,4 +1,4 @@
-.body{
+.body {
   background-color: #fffcf4;
 }
 
@@ -20,7 +20,6 @@ html, body {
   overflow: hidden;
 }
 
-
 .Home-header {
   display: flex;
   flex-direction: column;
@@ -41,23 +40,13 @@ html, body {
   margin-left: 50px; 
 }
 
-.header-box {
-  font-size: calc(10px + 2vmin);
-  background-color: #9caf88; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 150px);
-  padding: 10px 20px; 
-  border-radius: 5px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  margin-bottom: 20px;
-}
-
 .header-links {
   display: flex;
   gap: 15px;
+  position: absolute; 
+  top: 20px; 
+  right: 20px;
+  z-index: 1; 
 }
 
 .header-links a {
@@ -80,6 +69,14 @@ html, body {
   border-radius: 50%; 
   transform: translate(-50%, -50%); 
   z-index: -4;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  color: white; 
+  font-size: 2.5rem;
 }
 
 .top-left-blob {
@@ -147,3 +144,5 @@ html, body {
   width: 800px; 
   height: 700px;
 }
+
+
