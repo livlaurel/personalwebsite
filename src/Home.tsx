@@ -6,6 +6,7 @@ function Home() {
   return (
     <div className="Home">
       <div className="circle"></div>
+      <div className="blob top-left-blob"></div> 
       <header className="Home-header">
         <div className="header-box">
           <h2>Olivia Laurel</h2>
@@ -19,6 +20,7 @@ function Home() {
       <div className='PersonalProjects'>
         <PersProjects/>
       </div>  
+      <div className="blob bottom-right-blob"></div>
     </div>
   );
 }

@@ -7,7 +7,19 @@
   display: flex; 
   flex-direction: column;
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 
 .Home-header {
   display: flex;
@@ -60,7 +72,7 @@
 
 .circle {
   position: absolute;
-  top: 140%;       
+  top: 50%;       
   left: 50%;  
   width: 900px;   
   height: 900px;   
@@ -68,4 +80,25 @@
   border-radius: 50%; 
   transform: translate(-50%, -50%); 
   z-index: -1;      
+}
+
+.blob {
+  border-radius: 65% 35% 65% 35% / 28% 26% 74% 72%;
+  background-color: #9caf88; 
+  position: absolute; 
+  z-index: -1; 
+}
+
+.top-left-blob {
+  top: -200px; 
+  left: -200px; 
+  width: 900px;
+  height: 500px;
+}
+
+.bottom-right-blob {
+  bottom: -500px;
+  right: -200px;
+  width: 900px; 
+  height: 700px;
 }
