@@ -15,7 +15,9 @@ function Home() {
           </nav>
         </div>
       </header>
-      <PersProjects/>
+      <div className='PersonalProjects'>
+        <PersProjects/>
+      </div>  
     </div>
   );
 }
