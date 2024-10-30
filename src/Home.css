@@ -1,0 +1,43 @@
+.Home {
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  background-color: #fffcf4;
+}
+
+.Home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  font-size: calc(10px + 2vmin);
+  color: #292929;
+  padding-top: 20px; 
+}
+
+.header-box {
+  background-color: #ff985a; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 150px);
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+}
+
+.header-links {
+  display: flex;
+  gap: 15px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #292929; 
+  transition: color 0.3s;
+}
+
+.header-links a:hover {
+  color: #ff985a;
+}

@@ -1,14 +1,16 @@
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Blog from './blog/blog';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="header-box">
-          <h2>Olivia Laurel</h2>
-        </div>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>
   );
 }
 
