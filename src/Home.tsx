@@ -6,7 +6,9 @@ function Home() {
   return (
     <div className="Home">
       <div className="circle">
+      <div className='anim-typewriter'>
         <h2 className="name">Olivia Laurel</h2>
+      </div>
       </div>
       <div className="blob top-left-blob"></div> 
       <div className="blob two-top-left-blob"></div> 
