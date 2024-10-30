@@ -82,23 +82,24 @@ html, body {
   z-index: -1;      
 }
 
-.blob {
+.top-left-blob {
   border-radius: 65% 35% 65% 35% / 28% 26% 74% 72%;
   background-color: #9caf88; 
   position: absolute; 
   z-index: -1; 
-}
-
-.top-left-blob {
-  top: -200px; 
+  top: -250px; 
   left: -200px; 
   width: 900px;
   height: 500px;
 }
 
 .bottom-right-blob {
+  border-radius: 78% 22% 0% 100% / 50% 26% 74% 50% ;
+  background-color: #9caf88; 
+  position: absolute; 
+  z-index: -1; 
   bottom: -500px;
-  right: -200px;
-  width: 900px; 
+  right: -100px;
+  width: 800px; 
   height: 700px;
 }
