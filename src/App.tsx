@@ -5,7 +5,7 @@ import Blog from './blog/blog';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/personalwebsite'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
