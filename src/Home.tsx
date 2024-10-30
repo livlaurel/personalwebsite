@@ -5,6 +5,7 @@ import PersProjects from './components/PersProjects/personalpro';
 function Home() {
   return (
     <div className="Home">
+      <div className="circle"></div>
       <header className="Home-header">
         <div className="header-box">
           <h2>Olivia Laurel</h2>

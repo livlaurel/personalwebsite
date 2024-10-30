@@ -6,6 +6,7 @@
   font-family: Helvetica, sans-serif;
   display: flex; 
   flex-direction: column;
+  position: relative;
 }
 
 .Home-header {
@@ -30,7 +31,7 @@
 
 .header-box {
   font-size: calc(10px + 2vmin);
-  background-color: #ff985a; 
+  background-color: #9caf88; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,5 +55,17 @@
 }
 
 .header-links a:hover {
-  color: #ff985a;
+  color: #445039;
+}
+
+.circle {
+  position: absolute;
+  top: 140%;       
+  left: 50%;  
+  width: 900px;   
+  height: 900px;   
+  background-color: #ff985a; 
+  border-radius: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: -1;      
 }
