@@ -1,26 +1,15 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
-import './blob.css';
 import './links.css';
-import './circle.css';
+import './type.css';
 import PersProjects from './components/PersProjects/personalpro';
 
 function Home() {
   return (
     <div className="Home">
-      
-      <div className="circle">
-        <div className="anim-typewriter">
-          <h2 className="name">Olivia Laurel</h2>
-        </div>
+       <div className="anim-typewriter">
+        <h2 className="name">Olivia Laurel</h2>
       </div>
-
-      <div className="blob top-left-blob"></div>
-      <div className="blob two-top-left-blob"></div>
-      <div className="blob three-top-left-blob"></div>
-      <div className="blob bottom-right-blob"></div>
-      <div className="blob two-bottom-right-blob"></div>
-      <div className="blob three-bottom-right-blob"></div>
 
       <header className="Home-header">
         <nav className="header-links">
@@ -29,11 +18,6 @@ function Home() {
           <Link to="/blog">Blog</Link>
         </nav>
       </header>
-
-      <div className="PersonalProjects">
-        <PersProjects />
-      </div>
-
     </div>
   );
 }
