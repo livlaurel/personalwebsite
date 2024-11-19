@@ -1,5 +1,5 @@
 .body {
-  background-color: #fffcf4;
+  background-color: #fffbef;
 }
 
 .Home {
@@ -31,13 +31,34 @@ html, body {
   margin-left: 50px;
 }
 
-.PersonalProjects {
+.header-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  justify-content: flex-start; 
-  color: #292929;
-  padding-top: 20px; 
-  margin-left: 50px; 
+  gap: 15px;
+  position: absolute; 
+  top: 20px; 
+  right: 20px;
+  z-index: 1; 
 }
+
+.header-links a {
+  text-decoration: none;
+  color: #292929; 
+  transition: color 0.3s;
+}
+
+.header-links a:hover {
+  color: #445039;
+}
+
+.searchbar {
+  width: 100%; 
+  height: 50px;
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 60px; /* Adjust this value to position it below the links */
+}
+
 

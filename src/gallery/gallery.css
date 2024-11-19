@@ -1,0 +1,17 @@
+.Gallery {
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}

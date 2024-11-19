@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.searchbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.searchbar {
+    width: 1250px; 
+    height: 40px;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: left;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.searchbar .icon {
+    margin-right: 10px;
+}
+
+.searchbar .name {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}

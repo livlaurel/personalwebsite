@@ -1,24 +1,24 @@
-.anim-typewriter {
-   display: inline-block; 
-   overflow: hidden; 
-   white-space: nowrap;
-   border-right: 4px solid rgba(255, 255, 255, 0.75); 
-   animation: typewriter 1s steps(12) 1s forwards, 
-              blinkTextCursor 500ms steps(12) normal;
- }
- 
- @keyframes typewriter {
-   from { width: 0; }
-   to { width: 15em; } 
- }
- 
- @keyframes blinkTextCursor{
-   from{border-right-color: rgba(255,255,255,.75);}
-   to{border-right-color: transparent;}
- }
- 
- .name {
-   color: rgb(0, 0, 0); 
-   font-size: 2.5rem;
-   margin: 0;
- }
+h2 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.1em solid rgb(0, 0, 0);
+  animation: typewriter 1s steps(12) 1s forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}

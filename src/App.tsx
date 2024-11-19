@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import Blog from './blog/blog';
-
+import Gallery from './gallery/gallery';
+import ImageDetail from './gallery/picture';
 
 function App() {
   return (
-    <Router basename='/personalwebsite'>
+    <Router basename='/'>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery/:id" element={<ImageDetail />} />
       </Routes>
     </Router>
   );
