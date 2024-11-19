@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import aptImage from './apt.jpeg';
+import beaImage from './bea.jpeg';
+import fisImage from './fis.jpeg';
+import womanImage from './woman.jpeg';
 import './gallery.css';
 
+
 const images = [
-  { id: 1, src: '/gallery/apt.jpg', title: 'Image 1' },
-  { id: 2, src: '/gallery/bea.jpg', title: 'Image 2' },
-  { id: 2, src: '/gallery/fis.jpg', title: 'Image 3' },
-  { id: 2, src: '/gallery/woman.jpg', title: 'Image 4' },
+  { id: 1, src: aptImage, title: 'Apartment' },
+  { id: 2, src: beaImage, title: 'Bea' },
+  { id: 3, src: fisImage, title: 'Fish' },
+  { id: 4, src: womanImage, title: 'Happy' },
 ];
 
 const Gallery: React.FC = () => {

@@ -1,12 +1,17 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import aptImage from './apt.jpeg';
+import beaImage from './bea.jpeg';
+import fisImage from './fis.jpeg';
+import womanImage from './woman.jpeg';
 import './picture.css';
 
+
 const images = [
-  { id: 1, src: '/gallery/image1.jpg', title: 'Image 1', description: 'Description of Image 1' },
-  { id: 2, src: '/gallery/image2.jpg', title: 'Image 2', description: 'Description of Image 2' },
-  { id: 3, src: '/gallery/image3.jpg', title: 'Image 3', description: 'Description of Image 3' },
-  { id: 4, src: '/gallery/image4.jpg', title: 'Image 4', description: 'Description of Image 4' },
+  { id: 1, src: aptImage, title: 'Apartments', description: 'A illustration of an apartment' },
+  { id: 2, src: beaImage, title: 'Bea', description: 'Bea.' },
+  { id: 3, src: fisImage, title: 'Fish', description: 'A happy colorful fish!' },
+  { id: 4, src: womanImage, title: 'Happy', description: 'Happiness inspired by my mother' },
 ];
 
 const ImageDetail: React.FC = () => {
