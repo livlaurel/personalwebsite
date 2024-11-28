@@ -7,6 +7,7 @@ import womanImage from './woman.jpeg';
 import appleImage from './apple.jpg';
 import spaceImage from './space.jpg';
 import wonderImage from './wonder.jpg';
+import trainImage from './train.gif';
 import './picture.css';
 
 const images = [
@@ -17,6 +18,7 @@ const images = [
   { id: 5, src: appleImage, title: 'apple', description: "An apples life" },
   { id: 6, src: spaceImage, title: 'space', description: "A trip to space" },
   { id: 7, src: wonderImage, title: 'wonder', description: "Child like wonder" },
+  { id: 8, src: trainImage, title: 'train', description: "life on the train" },
 ];
 
 const ImageDetail: React.FC = () => {

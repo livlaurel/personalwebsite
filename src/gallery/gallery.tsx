@@ -7,6 +7,7 @@ import womanImage from './woman.jpeg';
 import appleImage from './apple.jpg';
 import spaceImage from './space.jpg';
 import wonderImage from './wonder.jpg';
+import trainImage from './train.gif'; 
 import './gallery.css';
 
 const watercolorImages = [
@@ -14,6 +15,10 @@ const watercolorImages = [
   { id: 2, src: aptImage, title: 'Apartment' },
   { id: 3, src: womanImage, title: 'Happy' },
   { id: 4, src: fisImage, title: 'Fish' },
+];
+
+const pixelArtImages = [
+  { id: 8, src: trainImage, title: 'Train' }, 
 ];
 
 const wonderImages = [
@@ -31,6 +36,17 @@ const Gallery: React.FC = () => {
         <h2>Water Color</h2>
         <div className="gallery-grid">
           {watercolorImages.map(image => (
+            <Link key={image.id} to={`/gallery/${image.id}`}>
+              <img src={image.src} alt={image.title} />
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <div className="gallery-section">
+        <h2>Pixel Art</h2>
+        <div className="gallery-grid">
+          {pixelArtImages.map(image => (
             <Link key={image.id} to={`/gallery/${image.id}`}>
               <img src={image.src} alt={image.title} />
             </Link>
