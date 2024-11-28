@@ -1,17 +1,21 @@
 .Gallery {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .gallery-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
-  justify-content: center;
+  align-items: center;
 }
 
 .gallery-grid img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   cursor: pointer;
 }

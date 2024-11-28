@@ -11,7 +11,7 @@ function Home() {
         <nav className="header-links">
           <a href="https://github.com/livlaurel" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/olivialaurel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <Link to="/gallery">Gallery</Link>
+          <Link to="/gallery">Art Gallery</Link>
         </nav>
       </header>
       <div className="searchbar-container">
