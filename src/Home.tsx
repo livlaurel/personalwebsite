@@ -22,6 +22,11 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="info-boxes">
+        <Link to="/gallery" className="info-box">Art Gallery</Link>
+        <Link to="/about" className="info-box">About Me</Link>
+        <Link to="/projects" className="info-box">My Projects</Link>
+      </div>
     </div>
   );
 }
