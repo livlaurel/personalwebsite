@@ -12,7 +12,7 @@
 
 .Gallery h1 {
   font-size: 75px;
-  color: rgb(0, 0, 0);
+  color: #292929;
   text-transform: uppercase;
   overflow: visible;
   white-space: normal;
@@ -22,7 +22,7 @@
 
 .Gallery h2 {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: #292929;
   text-transform: lowercase;
   overflow: visible;
   white-space: normal;
@@ -32,7 +32,7 @@
 
 .gallery-section h2 {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: #292929;
   text-transform: uppercase;
   overflow: visible;
   white-space: normal;
