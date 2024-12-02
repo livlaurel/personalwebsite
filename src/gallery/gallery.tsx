@@ -8,6 +8,7 @@ import appleImage from './apple.jpg';
 import spaceImage from './space.jpg';
 import wonderImage from './wonder.jpg';
 import trainImage from './train.gif'; 
+import windowImage from './window.jpeg';
 import './gallery.css';
 
 const watercolorImages = [
@@ -15,6 +16,8 @@ const watercolorImages = [
   { id: 2, src: aptImage, title: 'Apartment' },
   { id: 3, src: womanImage, title: 'Happy' },
   { id: 4, src: fisImage, title: 'Fish' },
+  { id: 9, src: windowImage, title: 'Window' },
+
 ];
 
 const pixelArtImages = [
