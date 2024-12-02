@@ -34,6 +34,7 @@ const Gallery: React.FC = () => {
   return (
     <div className="Gallery">
       <h1>Art Gallery</h1>
+      <h2>"Art is not a mirror held up to reality, but a hammer with which to shape it." - Bertolt Brecht</h2>
       
       <div className="gallery-section">
         <h2>Water Color</h2>

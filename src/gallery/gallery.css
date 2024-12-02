@@ -10,6 +10,26 @@
   margin-bottom: 20px;
 }
 
+.Gallery h1 {
+  font-size: 75px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  overflow: visible;
+  white-space: normal;
+  border-right: none;
+  animation: none;
+}
+
+.Gallery h2 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-transform: lowercase;
+  overflow: visible;
+  white-space: normal;
+  border-right: none;
+  animation: none;
+}
+
 .gallery-section h2 {
   font-size: 20px;
   color: rgb(0, 0, 0);
