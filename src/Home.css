@@ -58,7 +58,7 @@ html, body {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  margin-top: 60px; /* Adjust this value to position it below the links */
+  margin-top: 60px; 
 }
 
 .info-boxes {
@@ -69,7 +69,8 @@ html, body {
 }
 
 .info-box {
-  background-color: #c2d1b6;
+  background-color: #a9b8a0;
+  border: 2px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,13 +79,13 @@ html, body {
   text-decoration: none;
   color: #292929;
   font-size: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .info-box:hover {
-  background-color: #a9b8a0;
+  background-color: #ffffff;
+  transform: scale(1.02);
 }
 
 
