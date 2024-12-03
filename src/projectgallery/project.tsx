@@ -20,12 +20,12 @@ const Projects: React.FC = () => {
         </Link>
       </div>
       <div className="projectframe">
-        <Link to="/project/purrrsonality">
+        <Link to="/purrrsonality">
           <h1>Purrrsonality</h1>
         </Link>
       </div>
       <div className="projectframe">
-        <Link to="/project/valentines-day">
+        <Link to="/valentines-day">
           <h1>Valentines Day</h1>
         </Link>
       </div>

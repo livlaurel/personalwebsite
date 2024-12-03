@@ -18,8 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/personal-website" element={<PersWeb />} />
-        <Route path="/personal-website" element={<Purrr />} />
-        <Route path="/personal-website" element={<Val />} />
+        <Route path="/purrrsonality" element={<Purrr />} />
+        <Route path="/valentines-day" element={<Val />} />
       </Routes>
     </Router>
   );

@@ -1,7 +1,22 @@
-.container {
+.purrr {
+    font-family: Helvetica, sans-serif;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
     width: 90vw;
-    padding: 20px;
-  }
+}
+
+.purrr h1 {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.purrr p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+    max-width: 600px;
+}
