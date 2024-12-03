@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 import './links.css';
-import './type.css';
 import './searchbar.css';
 
 function Home() {
