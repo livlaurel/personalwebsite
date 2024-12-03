@@ -58,6 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 950px;
   height: 40vw; 
   text-decoration: none;
@@ -67,12 +68,6 @@
   margin-right: 45px; 
   margin-top: 20px; 
   animation: slideUpPop 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-  
-.projectframe img {
-  width: 500px;  
-  height: 40vw;
-  border-radius: 5px;
 }
   
 .projectframe:hover {

@@ -4,6 +4,9 @@ import Gallery from './gallery/gallery';
 import ImageDetail from './gallery/picture';
 import About from './about/about';
 import Projects from './projectgallery/project';
+import PersWeb from './projectgallery/projectdesc/persweb/persweb';
+import Purrr from './projectgallery/projectdesc/purrr/purrr';
+import Val from './projectgallery/projectdesc/valentines/val';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/gallery/:id" element={<ImageDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/personal-website" element={<PersWeb />} />
+        <Route path="/personal-website" element={<Purrr />} />
+        <Route path="/personal-website" element={<Val />} />
       </Routes>
     </Router>
   );
