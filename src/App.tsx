@@ -3,6 +3,7 @@ import Home from './Home';
 import Gallery from './gallery/gallery';
 import ImageDetail from './gallery/picture';
 import About from './about/about';
+import Projects from './projectgallery/project';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/gallery/:id" element={<ImageDetail />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );
