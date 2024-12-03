@@ -7,8 +7,7 @@ const About: React.FC = () => {
     <div className="container">
       <div className="about-container">
         <h1>About Me</h1>
-        <p>Hello! I'm Olivia Laurel!</p>
-        <p>I'm currently an undergrad CS major and I hope to go into web design. I love to draw in my free time (check out the art gallery ;p). I made this website as a way to document my work and growth in software dev!</p>
+        <p>Hello! I'm Olivia Laurel! I'm currently an undergrad CS major and I hope to go into web design. I love to draw in my free time (check out the art gallery ;p). I made this website as a way to document my work and growth in software dev!</p>
       </div>
 
       <div className="pic-container">
