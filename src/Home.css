@@ -79,7 +79,8 @@ html, body {
   height: 500px;
   text-decoration: none;
   color: #292929;
-  font-size: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
   border-radius: 5px;
   transition: background-color 0.3s;
 }

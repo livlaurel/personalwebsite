@@ -37,9 +37,9 @@ const Gallery: React.FC = () => {
       <h2>"Art is not a mirror held up to reality, but a hammer with which to shape it." - Bertolt Brecht</h2>
       
       <div className="gallery-section">
-        <h2>Water Color</h2>
+        <h2>Pixel Art</h2>
         <div className="gallery-grid">
-          {watercolorImages.map(image => (
+          {pixelArtImages.map(image => (
             <Link key={image.id} to={`/gallery/${image.id}`}>
               <img src={image.src} alt={image.title} />
             </Link>
@@ -48,9 +48,9 @@ const Gallery: React.FC = () => {
       </div>
 
       <div className="gallery-section">
-        <h2>Pixel Art</h2>
+        <h2>Water Color</h2>
         <div className="gallery-grid">
-          {pixelArtImages.map(image => (
+          {watercolorImages.map(image => (
             <Link key={image.id} to={`/gallery/${image.id}`}>
               <img src={image.src} alt={image.title} />
             </Link>
