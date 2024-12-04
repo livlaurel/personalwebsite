@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Gallery from './gallery/gallery';
 import ImageDetail from './gallery/picture';
@@ -10,7 +10,7 @@ import Val from './projectgallery/projectdesc/valentines/val';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
