@@ -14,22 +14,10 @@ const Projects: React.FC = () => {
         <p>Heres where I store my current projects! I'm pretty proud of them and I hope you like them too! Have fun exploring :P </p>
       </div>
 
-      <div className="projectframe">
-        <Link to="/personal-website">
-          <h1>Personal Website</h1>
-        </Link>
+      <Link to="/personal-website" className="projectframe">Personal Website</Link>
+      <Link to="/purrrsonality" className="projectframe">Purrrsonality</Link>
+      <Link to="/valentines-day" className="projectframe">Valentines Day</Link>
       </div>
-      <div className="projectframe">
-        <Link to="/purrrsonality">
-          <h1>Purrrsonality</h1>
-        </Link>
-      </div>
-      <div className="projectframe">
-        <Link to="/valentines-day">
-          <h1>Valentines Day</h1>
-        </Link>
-      </div>
-    </div>
   );
 };
 

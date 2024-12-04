@@ -3,6 +3,7 @@ import './persweb.css';
 import macbook from './macbook.jpg';
 import mockImage from './mock.jpeg';
 import abVideo from './ab.mp4';
+import designPG from './designpage.jpg'
 
 const PersWeb: React.FC = () => {
   return (
@@ -39,10 +40,13 @@ const PersWeb: React.FC = () => {
         </div>
         <div className="planning-images">
           <h3>Planning/Blueprint Images</h3>
-          <img src={mockImage} alt="Mock Image" />
-          <video controls>
-            <source src={abVideo} type="video/mp4" />
-          </video>
+          <div className="scroll-container">
+            <img src={mockImage} alt="Mock Image" />
+            <img src={designPG} alt="Design Image" />
+            <video controls>
+              <source src={abVideo} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </div>

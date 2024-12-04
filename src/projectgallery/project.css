@@ -67,7 +67,7 @@
   transition: background-color 0.3s;
   margin-right: 45px; 
   margin-top: 20px; 
-  animation: slideUpPop 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: slideUpPop .9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
   
 .projectframe:hover {
