@@ -2,6 +2,8 @@ import React from 'react';
 import './purrr.css';
 import laptop from './laptop.jpg';
 import mockImage from './figplan.jpeg';
+import catdes from "./catdesigns.png";
+import plan from "./plan.png";
 
 const Purrr: React.FC = () => {
   return (
@@ -42,6 +44,8 @@ const Purrr: React.FC = () => {
           <h3>Planning/Blueprint Images</h3>
           <div className="scroll-container">
             <img src={mockImage} alt="Figma" className="figma-image" />
+            <img src={catdes} alt="Cat Designs" className="cat-image" />
+            <img src={plan} alt="Plan" className="plan-image" />
           </div>
         </div>
       </div>
