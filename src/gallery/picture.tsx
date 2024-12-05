@@ -9,6 +9,15 @@ import spaceImage from './space.jpg';
 import wonderImage from './wonder.jpg';
 import trainImage from './train.gif';
 import windowImage from './window.jpeg';
+import fruit from './fruity.jpeg';
+import girls from './gril.jpeg';
+import hands from './hands.jpeg';
+import hey from './hey.jpeg';
+import meal from './meal.jpeg';
+import piano from './piano.jpeg';
+import sleepy from './sleepy.jpeg';
+import stargaze from './stargazing.jpeg';
+import study from './study.jpeg';
 import './picture.css';
 
 const images = [
@@ -21,6 +30,15 @@ const images = [
   { id: 7, src: wonderImage, title: 'wonder', description: "Child like wonder" },
   { id: 8, src: trainImage, title: 'train', description: "Life on the train" },
   { id: 9, src: windowImage, title: 'window', description: "A window" },
+  { id: 10, src: fruit, title: 'fruit', description: "Fruit" },
+  { id: 11, src: girls, title: 'girls', description: "two cute girls!" },
+  { id: 12, src: hands, title: 'hands', description: "love" },
+  { id: 13, src: hey, title: 'hey', description: "hey!" },
+  { id: 14, src: meal, title: 'meal', description: "a good meal" },
+  { id: 15, src: piano, title: 'piano', description: "favorite song" },
+  { id: 16, src: sleepy, title: 'sleepy', description: "doodles" },
+  { id: 17, src: stargaze, title: 'stargaze', description: "stargazing" },
+  { id: 18, src: study, title: 'study', description: "locked in"},
 ];
 
 const ImageDetail: React.FC = () => {

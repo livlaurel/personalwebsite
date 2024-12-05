@@ -45,11 +45,12 @@
   flex-direction: row;
   gap: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Changed to flex-start to align items to the start */
   overflow-x: auto;
   white-space: nowrap;
   padding: 10px;
-  margin: 0 -50px;
+  margin: 0 50px;
+  scroll-behavior: smooth;
 }
 
 .gallery-grid img {
