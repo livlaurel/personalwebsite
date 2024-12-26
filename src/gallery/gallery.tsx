@@ -4,9 +4,6 @@ import aptImage from './apt.jpeg';
 import beaImage from './bea.jpeg';
 import fisImage from './fis.jpeg';
 import womanImage from './woman.jpeg';
-import appleImage from './apple.jpg';
-import spaceImage from './space.jpg';
-import wonderImage from './wonder.jpg';
 import trainImage from './train.gif'; 
 import windowImage from './window.jpeg';
 import fruit from './fruity.jpeg';
@@ -18,6 +15,13 @@ import piano from './piano.jpeg';
 import sleepy from './sleepy.jpeg';
 import stargaze from './stargazing.jpeg';
 import study from './study.jpeg';
+import collage from './collage.jpeg';
+import ramen from './ramen.jpeg';
+import smiski from './smiski.jpeg';
+import sleep from './sleep.jpeg';
+import turbo from './turbo.jpeg';
+import toast from './toast.jpeg';
+import hand from './hand.jpeg';
 import './gallery.css';
 
 const watercolorImages = [
@@ -33,10 +37,13 @@ const pixelArtImages = [
   { id: 8, src: trainImage, title: 'Train' }, 
 ];
 
-const wonderImages = [
-  { id: 5, src: appleImage, title: 'apple' },
-  { id: 7, src: wonderImage, title: 'wonder' },
-  { id: 6, src: spaceImage, title: 'space' },
+const cartoonish = [
+  { id: 19, src: collage, title: 'collage' },
+  { id: 20, src: ramen, title: 'ramen' },
+  { id: 21, src: smiski, title: 'smiski' },
+  { id: 22, src: sleep, title: 'sleep' },
+  { id: 23, src: turbo, title: 'turbo' },
+  { id: 24, src: toast, title: 'toast' },
 ];
 
 const doodleImages = [
@@ -45,6 +52,7 @@ const doodleImages = [
   { id: 12, src: hands, title: 'hands' },
   { id: 13, src: hey, title: 'hey' },
   { id: 18, src: study, title: 'study'},
+  { id: 25, src: hand, title: 'hand' },
   { id: 14, src: meal, title: 'meal' },
   { id: 15, src: piano, title: 'piano' },
   { id: 17, src: stargaze, title: 'stargaze' },
@@ -70,8 +78,8 @@ const Gallery: React.FC = () => {
 
       <div className="gallery-section">
         <div className="gallery-grid">
-        <h2>Wonder</h2>
-          {wonderImages.map(image => (
+        <h2>Cartoonish</h2>
+          {cartoonish.map(image => (
             <Link key={image.id} to={`/gallery/${image.id}`}>
               <img src={image.src} alt={image.title} />
             </Link>

@@ -4,9 +4,6 @@ import aptImage from './apt.jpeg';
 import beaImage from './bea.jpeg';
 import fisImage from './fis.jpeg';
 import womanImage from './woman.jpeg';
-import appleImage from './apple.jpg';
-import spaceImage from './space.jpg';
-import wonderImage from './wonder.jpg';
 import trainImage from './train.gif';
 import windowImage from './window.jpeg';
 import fruit from './fruity.jpeg';
@@ -18,27 +15,36 @@ import piano from './piano.jpeg';
 import sleepy from './sleepy.jpeg';
 import stargaze from './stargazing.jpeg';
 import study from './study.jpeg';
+import collage from './collage.jpeg';
+import ramen from './ramen.jpeg';
+import smiski from './smiski.jpeg';
+import sleep from './sleep.jpeg';
+import turbo from './turbo.jpeg';
+import toast from './toast.jpeg';
+import hand from './hand.jpeg';
 import './picture.css';
 
 const images = [
-  { id: 1, src: beaImage, title: 'B', description: 'Fav artsist' },
+  { id: 1, src: beaImage, title: 'B', description: 'Fav artist' },
   { id: 2, src: aptImage, title: 'Apartment', description: 'Apartment living' },
-  { id: 3, src: womanImage, title: 'Happy', description: 'A happy day' },
-  { id: 4, src: fisImage, title: 'Swim', description: "No place like home" },
-  { id: 5, src: appleImage, title: 'apple', description: "An apples life" },
-  { id: 6, src: spaceImage, title: 'space', description: "A trip to space" },
-  { id: 7, src: wonderImage, title: 'wonder', description: "Child like wonder" },
-  { id: 8, src: trainImage, title: 'train', description: "Life on the train" },
-  { id: 9, src: windowImage, title: 'window', description: "A window" },
-  { id: 10, src: fruit, title: 'fruit', description: "Fruit" },
-  { id: 11, src: girls, title: 'girls', description: "two cute girls!" },
-  { id: 12, src: hands, title: 'hands', description: "love" },
-  { id: 13, src: hey, title: 'hey', description: "hey!" },
-  { id: 14, src: meal, title: 'meal', description: "a good meal" },
-  { id: 15, src: piano, title: 'piano', description: "favorite song" },
-  { id: 16, src: sleepy, title: 'sleepy', description: "doodles" },
-  { id: 17, src: stargaze, title: 'stargaze', description: "stargazing" },
-  { id: 18, src: study, title: 'study', description: "locked in"},
+  { id: 3, src: womanImage, title: 'Happy', description: 'A happy woman' },
+  { id: 4, src: fisImage, title: 'Fish', description: 'A swimming fish' },
+  { id: 8, src: trainImage, title: 'Train', description: 'A moving train' },
+  { id: 9, src: windowImage, title: 'Window', description: 'A beautiful window' },
+  { id: 10, src: fruit, title: 'Fruit', description: 'A bowl of fruit' },
+  { id: 11, src: girls, title: 'Girls', description: 'Group of girls' },
+  { id: 12, src: hands, title: 'Hands', description: 'Hands in the air' },
+  { id: 13, src: hey, title: 'Hey', description: 'Saying hey' },
+  { id: 14, src: meal, title: 'Meal', description: 'A delicious meal' },
+  { id: 15, src: piano, title: 'Piano', description: 'Playing piano' },
+  { id: 18, src: study, title: 'Study', description: 'Studying hard' },
+  { id: 19, src: collage, title: 'Collage', description: 'Art collage' },
+  { id: 20, src: ramen, title: 'Ramen', description: 'Bowl of ramen' },
+  { id: 21, src: smiski, title: 'Smiski', description: "Smiski (noun): Small glow-in-the-dark figurines in quirky poses, designed to bring charm and surprise by glowing in hidden or unexpected spots." },
+  { id: 22, src: sleep, title: 'Sleep', description: "Animals get sleepy too" },
+  { id: 23, src: turbo, title: 'Turbo', description: "Dan da dan art" },
+  { id: 24, src: toast, title: 'Toast', description: "Bunnys enjoying some breakfast" },
+  { id: 25, src: hand, title: 'Hand', description: "Hand practice" },
 ];
 
 const ImageDetail: React.FC = () => {
@@ -57,8 +63,8 @@ const ImageDetail: React.FC = () => {
   return (
     <div className="ImageDetail">
       <h1>{image.title}</h1>
-      <img src={image.src} alt={image.title} />
       <p>{image.description}</p>
+      <img src={image.src} alt={image.title} />
     </div>
   );
 };
