@@ -66,6 +66,7 @@ html, body {
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .info-box {
@@ -83,6 +84,7 @@ html, body {
   text-transform: uppercase;
   border-radius: 5px;
   transition: background-color 0.3s;
+  margin: 10px; /* Add margin for spacing */
 }
 
 .info-box:hover {
@@ -112,6 +114,31 @@ html, body {
 @keyframes blinkCaret {
   50% {
     border-color: transparent;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .info-box {
+    width: 300px;
+    height: 400px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    width: 250px;
+    height: 350px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+    width: 200px;
+    height: 300px;
+    font-size: 16px;
   }
 }
 
