@@ -22,6 +22,10 @@ import sleep from './sleep.jpeg';
 import turbo from './turbo.jpeg';
 import toast from './toast.jpeg';
 import hand from './hand.jpeg';
+import orange from './orange.jpeg'
+import matcha from './matcha.jpeg'
+import heels from './heels.jpeg'
+import bento from './bento.jpeg'
 import './picture.css';
 
 const images = [
@@ -47,6 +51,10 @@ const images = [
   { id: 23, src: turbo, title: 'turbo', description: "dan da dan art" },
   { id: 24, src: toast, title: 'toast', description: "bunnys enjoying some breakfast" },
   { id: 25, src: hand, title: 'hand', description: "hand" },
+  { id: 26, src: orange, title: 'orange', description: "oranges in a bag" },
+  { id: 27, src: matcha, title: 'matcha', description: "matcha mornings" },
+  { id: 28, src: heels, title: 'heels', description: "red heels" },
+  { id: 29, src: bento, title: 'bento', description: "bento lunch" }
 ];
 
 const ImageDetail: React.FC = () => {

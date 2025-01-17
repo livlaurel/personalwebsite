@@ -22,6 +22,10 @@ import sleep from './sleep.jpeg';
 import turbo from './turbo.jpeg';
 import toast from './toast.jpeg';
 import hand from './hand.jpeg';
+import orange from './orange.jpeg'
+import matcha from './matcha.jpeg'
+import heels from './heels.jpeg'
+import bento from './bento.jpeg'
 import './gallery.css';
 
 const watercolorImages = [
@@ -29,6 +33,7 @@ const watercolorImages = [
   { id: 2, src: aptImage, title: 'Apartment' },
   { id: 3, src: womanImage, title: 'Happy' },
   { id: 4, src: fisImage, title: 'Fish' },
+  { id: 28, src: heels, title: 'heels' },
   { id: 9, src: windowImage, title: 'Window' },
 
 ];
@@ -37,13 +42,19 @@ const pixelArtImages = [
   { id: 8, src: trainImage, title: 'Train' }, 
 ];
 
-const cartoonish = [
-  { id: 19, src: collage, title: 'collage' },
+const foodies = [
+  { id: 27, src: matcha, title: 'matcha' },
+  { id: 29, src: bento, title: 'bento' },
   { id: 20, src: ramen, title: 'ramen' },
+  { id: 24, src: toast, title: 'toast' },
+  { id: 26, src: orange, title: 'orange' },
+];
+
+const cartoonish = [
+  { id: 23, src: turbo, title: 'turbo' },
+  { id: 19, src: collage, title: 'collage' },
   { id: 21, src: smiski, title: 'smiski' },
   { id: 22, src: sleep, title: 'sleep' },
-  { id: 23, src: turbo, title: 'turbo' },
-  { id: 24, src: toast, title: 'toast' },
 ];
 
 const doodleImages = [
@@ -69,6 +80,17 @@ const Gallery: React.FC = () => {
         <div className="gallery-grid">
         <h2>Pixel Art</h2>
           {pixelArtImages.map(image => (
+            <Link key={image.id} to={`/gallery/${image.id}`}>
+              <img src={image.src} alt={image.title} />
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <div className="gallery-section">
+        <div className="gallery-grid">
+        <h2>Foodies</h2>
+          {foodies.map(image => (
             <Link key={image.id} to={`/gallery/${image.id}`}>
               <img src={image.src} alt={image.title} />
             </Link>
