@@ -15,7 +15,7 @@ function Home() {
           <a href="https://www.linkedin.com/in/olivialaurel/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://www.instagram.com/liv.iome/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/livia.iome/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
         </a>
         </nav>
