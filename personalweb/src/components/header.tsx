@@ -3,7 +3,7 @@ import logo from "../imgs/logo.png";
 const Header = () => {
     return (
         <main className="bg-[#fff9f0] top-0 z-50">
-            <nav className="flex justify-between items-center p-4">
+            <nav className="flex justify-between items-center p-3">
                 <a href="/" className="text-black flex justify-left">
                     <img src={logo} alt="livia" className="w-35 h-30" />
                 </a>
