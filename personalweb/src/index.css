@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.box-shadow {
+  box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+}
