@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="flex-grow font-[Arial, Helvetica, sans-serif] flex font-bold underline justify-center items-center">
                     <div className="flex space-x-60">
                         <a href="/about" className="text-black">About Me</a>
-                        <a href="/projects" className="text-black">Projects</a>
+                        <a href="/dev" className="text-black">Projects</a>
                         <a href="/inspire" className="text-black">Inspiration</a>
                     </div>
                 </div>
