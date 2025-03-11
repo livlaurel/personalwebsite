@@ -32,3 +32,28 @@
   -moz-box-shadow: 10px 12px 0px 0px #778965;
 }
 
+@keyframes fadeIn {
+  from {
+      opacity: 0.3;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0.3; /* Ensure they start at 30% */
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-in-1 {
+  animation-delay: 0s; /* First fades in immediately */
+}
+
+.fade-in-2 {
+  animation-delay: 1s; /* Second fades in after 1s */
+}
+
+.fade-in-3 {
+  animation-delay: 2s; /* Third fades in after 2s */
+}
