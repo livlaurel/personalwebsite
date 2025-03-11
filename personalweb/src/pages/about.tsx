@@ -17,7 +17,7 @@ const About = () => {
                         <p>📍 Based in Texas | 💻 Frontend Dev & Designer</p>
                     </div>
                     <div className="ml-10">
-                        <img src={pic1} alt="pic1" className="rounded-md w-90 h-115 box box-content box-shadow-green rounded-md border-3 border-[#778965] h-115 w-90 bg-[#9caf88] flex flex-col items-center" />
+                        <img src={pic1} alt="pic1" className="rounded-md w-90 h-115 box box-content box-shadow-green border-3 border-[#778965] bg-[#9caf88] flex flex-col items-center" />
                     </div>
                 </div>
             </main>

@@ -1,7 +1,4 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
+@import "tailwindcss";
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -24,9 +21,9 @@
 }
 
 .box-shadow {
-  box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 10px 12px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 10px 12px 0px 0px rgb(0, 0, 1);
+  -webkit-box-shadow: 10px 12px 0px 0px rgb(0, 0, 1);
+  -moz-box-shadow: 10px 12px 0px 0px rgb(0, 0, 1);
 }
 
 .box-shadow-green {
@@ -34,3 +31,4 @@
   -webkit-box-shadow: 10px 12px 0px 0px #778965;
   -moz-box-shadow: 10px 12px 0px 0px #778965;
 }
+
