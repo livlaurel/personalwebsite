@@ -10,13 +10,13 @@ const Dev = () => {
             <Header />
             <main className="bg-[#fff9f0] flex-grow p-4">
                 <div className='flex flex-row items-start'>
-                    <div className='flex flex-col space-y-6 text-6xl font-bold tracking-tighter flex-1 ml-10 max-w-3xl'>
-                        <div className="fade-in fade-in-1">Create</div>
-                        <div className="fade-in fade-in-2">Design</div>
-                        <div className="fade-in fade-in-3">Code</div>
+                    <div className='flex flex-col space-y-6 flex-1 ml-10 max-w-3xl'>
+                        <div className="fade-in fade-in-1 text-6xl font-bold tracking-tighter">Create</div>
+                        <div className="fade-in fade-in-2 text-6xl font-bold tracking-tighter">Design</div>
+                        <div className="fade-in fade-in-3 text-6xl font-bold tracking-tighter">Code</div>
+                        <p className='text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
                     </div>
-
-                    {/* Scrollable container for the green boxes */}
+            
                     <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
                             <div className='flex'>
