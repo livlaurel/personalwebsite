@@ -23,8 +23,19 @@ const Dev = () => {
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
                                     <img src={calmkeys} alt='calmkeys' className='w-50 h-50 rounded-full' />
                                 </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-20'></div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'></div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-20'>
+                                    <p className='text-base font-mono tracking-tighter m-5 mt-10'>CalmKeys is an endless typing game designed to help users practice their typing skills at their own pace.</p>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
+                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
+                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                        <ul className='list-disc text-lg font-mono tracking-tighter'>
+                                            <li>React</li>
+                                            <li>TypeScript</li>
+                                            <li>Tailwind</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
@@ -32,8 +43,19 @@ const Dev = () => {
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
                                     <img src={purrr} alt='purrr' className='w-50 h-50 rounded-full' />
                                 </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-20'></div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'></div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-20'>
+                                    <p className='text-base font-mono tracking-tighter m-5 mt-10'>Purrrsonality is a fun personality game that tells you what kind of cat you are! Meow ദ്ദി/ᐠ｡‸｡ᐟ\</p>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
+                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
+                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                        <ul className='list-disc text-lg font-mono tracking-tighter'>
+                                            <li>React</li>
+                                            <li>TypeScript</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
@@ -41,8 +63,19 @@ const Dev = () => {
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
                                     <img src={logo} alt='purrr' className='w-50 h-50 rounded-full' />
                                 </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-20'></div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'></div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-20'>
+                                    <p className='text-base font-mono tracking-tighter m-5 mt-8'>This is my personal website where I showcase my projects, share inspiration, and give you a glimpse into who I am, all while keeping things creative and fun!</p>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 justify-right ml-10'>
+                                   <div className='flex flex-col ml-20 m-5 mt-8'> 
+                                    <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                    <ul className='list-disc text-lg font-mono tracking-tighter'>
+                                        <li>React</li>
+                                        <li>TypeScript</li>
+                                        <li>Tailwind</li>
+                                    </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
