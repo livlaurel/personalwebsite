@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../imgs/logo.png";
 import { FaUserAlt } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
