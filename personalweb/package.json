@@ -1,5 +1,6 @@
 {
-  "name": "personalweb",
+  "name": "personalwebsite",
+  "homepage": "https://www.olaurel.dev/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
