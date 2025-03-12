@@ -20,13 +20,13 @@ const Inspire = () => {
     return (
         <div className='flex flex-col h-screen'>
             <Header />
-            <main className="bg-[#fff9f0] flex-grow p-4">
+            <main className="bg-[#fff9f0] flex-grow">
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='underline font-bold text-3xl'>My Inspirations for Life</h1>
                     <p className='mt-5 mb-5 text-base font-mono tracking-1'>A collection of colors, people, places, and moments that spark creativity, bring joy, and keep me motivated.</p>
                 </div>
-                <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
-                    <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col space-y-6 ml-5 mr-5 h-[435px] overflow-y-auto">
+                    <div className="grid grid-cols-4 gap-4">
                         {images.map((image, index) => (
                             <img key={index} src={image.src} alt={image.alt} className="w-full h-auto rounded-md" />
                         ))}
