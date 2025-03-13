@@ -31,7 +31,7 @@ const CalmKeys = () => {
                     Typing games often emphasize speed, but I wanted something different. I found myself wanting a tool to practice typing slowly and mindfully—something that didn’t focus on hitting high scores or competing against the clock. This led to the creation of CalmKeys, where the focus is all about typing accurately and comfortably at your own pace.
                     </p>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5 '>What I built</h2>
+                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5 '>What I Built</h2>
                     <p className='text-xl/10'> 
                     As the solo developer, I designed the entire experience, from the minimalist interface to the typing functionality.
                     </p>
@@ -57,10 +57,10 @@ const CalmKeys = () => {
                     <p className='text-xl/10 mb-3'>
                     A tool that helps me—and others—slow down and focus on typing more mindfully. The response has been positive, with users appreciating the peaceful vibe and the freedom to type at their own pace.
                     </p>
-                    <p className='mb-3 text-base/10 font-mono tracking-tighter'>
+                    <p className='mb-2 text-base/10 font-mono tracking-tighter'>
                     "I love the simplicity of CalmKeys. It’s a great way to practice typing and I don't have to worry about a timer!" – User feedback
                     </p>
-                    <p className='mb-15 text-base/10 font-mono tracking-tighter'>
+                    <p className='mb-15 text-base/5 font-mono tracking-tighter'>
                     "CalmKeys helped me improve how I type. I feel more comfortable typing at work." – User feedback
                     </p>
 
@@ -70,7 +70,7 @@ const CalmKeys = () => {
                         </li>
                         <li>Learned how to design for simplicity while still offering a useful experience.
                         </li>
-                        <li>Gained hands-on experience with Tailwind CSS to build responsive layouts quickly.
+                        <li>Gained hands-on experience with Tailwind CSS to build responsive layouts.
                         </li>
                     </ul>
 
