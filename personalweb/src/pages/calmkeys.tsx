@@ -57,8 +57,11 @@ const CalmKeys = () => {
                     <p className='text-xl/10 mb-3'>
                     A tool that helps me—and others—slow down and focus on typing more mindfully. The response has been positive, with users appreciating the peaceful vibe and the freedom to type at their own pace.
                     </p>
-                    <p className='mb-15 text-base/10 font-mono tracking-tighter'>
+                    <p className='mb-3 text-base/10 font-mono tracking-tighter'>
                     "I love the simplicity of CalmKeys. It’s a great way to practice typing and I don't have to worry about a timer!" – User feedback
+                    </p>
+                    <p className='mb-15 text-base/10 font-mono tracking-tighter'>
+                    "CalmKeys helped me improve how I type. I feel more comfortable typing at work." – User feedback
                     </p>
 
                     <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Key Learnings</h2>
