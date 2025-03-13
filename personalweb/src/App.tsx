@@ -3,6 +3,7 @@ import Home from './pages/home.tsx';
 import About from './pages/about.tsx';
 import Dev from './pages/dev.tsx';
 import Inspire from './pages/inspo.tsx';
+import CalmKeys from './pages/calmkeys.tsx';
 
 function App(){
   return(
@@ -12,6 +13,7 @@ function App(){
         <Route path="/about" element={<About />} />
         <Route path="/dev" element={<Dev />} />
         <Route path="/inspire" element={<Inspire />} />
+        <Route path="/calmkeys" element={<CalmKeys />} />
       </Routes>
     </HashRouter>
   )
