@@ -1,6 +1,8 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import purrr from '../imgs/purrr.png';
+import fly from '../video/fly.mp4';
+import game from '../video/game.mp4';
 
 const Purrr = () => {
     return (
@@ -21,6 +23,10 @@ const Purrr = () => {
     
                         </p>
                         <div className="flex items-center justify-center bg-[#9caf88] border-3 border-[#7f966c] w-3/5 p-2 rounded-lg mb-15">
+                            <video width="320" height="240" autoPlay loop muted>
+                                <source src={fly} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
 
