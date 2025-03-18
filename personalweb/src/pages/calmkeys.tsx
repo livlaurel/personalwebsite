@@ -1,7 +1,7 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import calmkeys from '../imgs/calmkeys.png';
-import ckhome2 from '../imgs/ckplan/ckhome2.jpeg';
+import quote from '../video/ckdemo_quote.mp4';
 
 const CalmKeys = () => {
     return (
@@ -22,7 +22,10 @@ const CalmKeys = () => {
                             CalmKeys is an endless typing game I created to help users focus on improving their typing skills at their own pace. Inspired by MonkeyType, I wanted a space where I could slow down and practice typing without the pressure of a timer or high scores. The goal was to create a calm, minimalist environment that encourages typing accuracy over speed.
                         </p>
                         <div className="flex items-center justify-center bg-[#9caf88] border-3 border-[#7f966c] w-3/5 p-2 rounded-lg mb-15">
-                            <img src={ckhome2} alt="ckhome2" className="w-full h-auto rounded-lg object-contain" />
+                            <video width="620" height="540" className='rounded-sm' autoPlay loop muted>
+                                <source src={quote} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
 
