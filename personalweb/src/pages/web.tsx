@@ -1,6 +1,8 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import logo from '../imgs/logo.png';
+import v1 from '../video/v1.mp4';
+import web from '../imgs/web.jpeg';
 
 const Web = () => {
     return (
@@ -9,7 +11,7 @@ const Web = () => {
             <main className="bg-[#fff9f0] flex-grow">
               <div className='flex flex-col h-[500px] overflow-y-auto'>
                 <div className='flex flex-col justify-start items-center'>
-                    <img src={logo} alt='calmkeys' className='w-70 h-40' />
+                    <img src={logo} alt='calmkeys' className='w-70 h-50' />
                     <p className='font-mono font-medium tracking-tighter'>My little space on the internet</p>
                 </div>
 
@@ -20,7 +22,7 @@ const Web = () => {
                             This website is my little corner of the internet—a place where I share my projects, who I am, and everything that inspires me. It’s like a digital journal of my journey as a front-end developer and designer. More than just a portfolio, it’s a space that reflects me, my growth, and the things I love.
                         </p>
                         <div className="flex items-center justify-center bg-[#9caf88] border-3 border-[#7f966c] w-3/5 p-2 rounded-lg mb-15">
-                            
+                            <img src={web} alt="web" className="w-full h-auto rounded-sm object-contain" />
                         </div>
                     </div>
 
@@ -48,13 +50,23 @@ const Web = () => {
                         </li>
                     </ul>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Challenges & Solutions</h2>
-                    <p className='mb-5 text-xl/10'>
-                        This wasn’t my first attempt. I actually built my website twice. The first version? A good try, but not quite “me.” I jumped straight into coding with no real plan, and it showed. It felt unfinished, a little bland, and honestly… kind of frustrating to work on.
-                    </p>
-                    <p className='mb-15 text-xl/10'>
-                    So, I scrapped it. Completely. Deleted everything and started fresh. This time, I took my time with the design, using Canva to sketch things out first. I also reached out to some web developers and UX/UI designers through Boba Talk, and their advice helped me create something more thoughtful and user-friendly. Once I had a clear vision, coding became way more enjoyable, and I ended up with a site that actually feels like me.
-                    </p>
+                    <h2 className='text-5xl font-stretch-expanded font-medium mb-10'>Challenges & Solutions</h2>
+                        <div className="flex flex-row gap-8 items-start">
+                            <div className="flex items-center justify-center bg-[#9caf88] border-3 border-[#7f966c] p-2 rounded-lg mb-15">
+                                    <video width="620" height="540" className='rounded-sm' autoPlay loop muted>
+                                        <source src={v1} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                         </div>
+                            <div className="flex-col w-170">
+                            <p className='mb-5 text-xl/10'>
+                                This wasn’t my first attempt. I actually built my website twice. The first version? A good try, but not quite “me.” I jumped straight into coding with no real plan, and it showed. It felt unfinished, a little bland, and honestly… kind of frustrating to work on.
+                            </p>
+                            <p className='mb-15 text-xl/10'>
+                                So, I scrapped it. Completely. Deleted everything and started fresh. This time, I took my time with the design, using Canva to sketch things out first. I also reached out to some web developers and UX/UI designers through Boba Talk, and their advice helped me create something more thoughtful and user-friendly. Once I had a clear vision, coding became way more enjoyable, and I ended up with a site that actually feels like me.
+                            </p>
+                        </div>
+                    </div>
 
                     <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Results</h2>
                     <p className='text-xl/10 mb-3'>
