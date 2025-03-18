@@ -39,9 +39,9 @@ const CalmKeys = () => {
                      CalmKeys features:
                     </p>
                     <ul className='list-disc marker:text-[#ff7a7a] ml-10 mb-15 text-xl/8'>
-                        <li>Endless typing practice – No timers, no scores. Just you and the words.
+                        <li> <b className='font-semibold'>Endless typing practice</b> – No timers, no scores. Just you and the words.
                         </li>
-                        <li>A clean, calming design – I used Tailwind CSS to keep things simple and soothing.
+                        <li> <b className='font-semibold'>A clean, calming design</b> – I used Tailwind CSS to keep things simple and soothing.
                         </li>
                     </ul>
 

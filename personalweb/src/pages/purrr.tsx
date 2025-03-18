@@ -46,11 +46,11 @@ const Purrr = () => {
                      Purrrsonality features:
                     </p>
                     <ul className='list-disc marker:text-[#ff7a7a] ml-10 mb-15 text-xl/8'>
-                        <li> A dynamic quiz experience – Users make decisions that shape their test-taking personality.
+                        <li> <b className='font-semibold'>A dynamic quiz experience</b> – Users make decisions that shape their test-taking personality.
                         </li>
-                        <li>Cat personality results – Each user is matched with a cat breed based on their choices.
+                        <li><b className='font-semibold'>Cat personality results</b> – Each user is matched with a cat breed based on their choices.
                         </li>
-                        <li>A simple, intuitive design – I focused on creating a clean and enjoyable interface to keep the experience fun and immersive.
+                        <li><b className='font-semibold'>A simple, intuitive design</b> – I focused on creating a clean and enjoyable interface to keep the experience fun and immersive.
                         </li>
                     </ul>
 
