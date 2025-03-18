@@ -80,7 +80,7 @@ const Purrr = () => {
                     "I tried it, and it is very cute (biased, because I'm already a cat lover)." – User feedback
                     </p>
                     <p className='mb-15 text-base/5 font-mono tracking-tighter'>
-                    "I thought it was a neat and well executed idea; purrrsonality is awesome" – User feedback
+                    "I thought it was a neat and well executed idea; purrrsonality is awesome." – User feedback
                     </p>
 
                     <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Key Learnings</h2>
