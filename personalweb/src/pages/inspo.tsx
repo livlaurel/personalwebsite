@@ -26,7 +26,7 @@ const Inspire = () => {
                         A collection of colors, people, places, and moments that spark creativity, bring joy, and keep me motivated.
                     </p>
 
-                    <button className='text-sm mb-3 font-style: italic font-' onClick={() => window.location.reload()}>
+                    <button className='text-sm mb-3 font-style: italic' onClick={() => window.location.reload()}>
                         click here to refresh for more inspiration
                     </button>
                 </div>
