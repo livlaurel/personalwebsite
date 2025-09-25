@@ -1,6 +1,6 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import pic1 from '../imgs/pic1.jpeg';
+import pic1 from '../imgs/pic1.jpg';
 import about from '../imgs/about.png';
 
 const About = () => {
