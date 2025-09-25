@@ -11,9 +11,11 @@ const About = () => {
                 <div className='flex flex-row items-start'>
                     <div className='flex flex-col space-y-6 text-xl flex-1 ml-10 mr-30 max-w-3xl'>
                         <img src={about} alt="about" className="w-100 h-25" />
-                        <p>Hello! I’m Olivia Laurel, a Computer Science undergrad with a passion for web design and frontend development.</p>
-                        <p>When I’m not coding, you’ll probably find me drawing, playing video games, or deep-diving into UI/UX design.</p>
-                        <p>I built this website as a way to document my journey in software development, share projects, and showcase my growth as a developer. Feel free to explore and reach out if you’d like to connect!</p>
+                        <p>Hi I’m Olivia!</p>
+                        <p>I'm Computer Science student and I have a passion for web design and frontend development.</p>
+                        <p>Outside of studies, I love to draw, play video games, and bake. I'm currently playing through Hollow Knight and my favorite thing to bake is brown butter cookies.</p>
+                        <p>I built this website as a way to document my journey in software development, share projects, and show my growth as a developer. </p>
+                        <p>Feel free to explore and reach out if you’d like to connect!</p>
                         <p>📍 Based in Texas | 💻 Frontend Dev & Designer</p>
                     </div>
                     <div className="ml-10">
