@@ -57,3 +57,8 @@
 .fade-in-3 {
   animation-delay: 2s; /* Third fades in after 2s */
 }
+
+.custom-shadow {
+  box-shadow: 10px 10px 0 #394a28;
+}
+
