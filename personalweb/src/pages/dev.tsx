@@ -3,6 +3,8 @@ import Footer from '../components/footer';
 import calmkeys from '../imgs/calm_keys_logo.png';
 import purrr from '../imgs/Purrrsonality.png';
 import logo from '../imgs/logo.png';
+import { FaReact, FaGithub, FaGit } from 'react-icons/fa';
+import { SiTypescript, SiTailwindcss } from 'react-icons/si';
 
 const Dev = () => {
     return (
@@ -15,6 +17,7 @@ const Dev = () => {
                         <div className="fade-in fade-in-2 text-6xl font-bold tracking-tighter">Design</div>
                         <div className="fade-in fade-in-3 text-6xl font-bold tracking-tighter">Code</div>
                         <p className='text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
+                        <p className='text-sm italic font-mono font-semibold tracking-tighter'>scroll for more...</p>
                     </div>
             
                     <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
@@ -36,10 +39,22 @@ const Dev = () => {
                                 <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
                                     <div className='flex flex-col ml-20 m-5 mt-8'> 
                                         <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                        <ul className='list-disc text-lg font-mono tracking-tighter'>
-                                            <li>React</li>
-                                            <li>TypeScript</li>
-                                            <li>Tailwind</li>
+                                        <ul className='flex flex-wrap justify-center text-lg font-mono tracking-tighter'>
+                                            <li className='flex items-center w-1/3 justify-center'>
+                                                <FaReact className='text-sky-500 text-5xl mr-2' /> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <SiTypescript  className='text-yellow-500 text-5xl mr-2'/> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <SiTailwindcss  className='text-teal-500 text-5xl mr-2'/> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <FaGithub className='text-5xl'/> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <FaGit className='text-orange-500 text-5xl mr-2'/> 
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -62,14 +77,26 @@ const Dev = () => {
                                 </div>
                                 <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
                                     <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                        <ul className='list-disc text-lg font-mono tracking-tighter'>
-                                            <li>React</li>
-                                            <li>TypeScript</li>
-                                            <li>CSS</li>
-                                        </ul>
+                                            <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                            <ul className='flex flex-wrap justify-center text-lg font-mono tracking-tighter'>
+                                                <li className='flex items-center w-1/3 justify-center'>
+                                                    <FaReact className='text-sky-500 text-5xl mr-2' /> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                    <SiTypescript  className='text-yellow-500 text-5xl mr-2'/> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                    <SiTailwindcss  className='text-teal-500 text-5xl mr-2'/> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                    <FaGithub className='text-5xl'/> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                    <FaGit className='text-orange-500 text-5xl mr-2'/> 
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
@@ -86,15 +113,27 @@ const Dev = () => {
                                     </div>
                                 </div>
                                 <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 justify-right ml-10'>
-                                   <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                    <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                    <ul className='list-disc text-lg font-mono tracking-tighter'>
-                                        <li>React</li>
-                                        <li>TypeScript</li>
-                                        <li>Tailwind</li>
-                                    </ul>
+                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
+                                            <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                            <ul className='flex flex-wrap justify-center text-lg font-mono tracking-tighter'>
+                                                <li className='flex items-center w-1/3 justify-center'>
+                                                    <FaReact className='text-sky-500 text-5xl mr-2' /> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                    <SiTypescript  className='text-yellow-500 text-5xl mr-2'/> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                    <SiTailwindcss  className='text-teal-500 text-5xl mr-2'/> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                    <FaGithub className='text-5xl'/> 
+                                                </li>
+                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                    <FaGit className='text-orange-500 text-5xl mr-2'/> 
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
