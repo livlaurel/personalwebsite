@@ -17,7 +17,7 @@ const Web = () => {
                 </div>
 
                 <div className="flex flex-col justify-start items-left ml-20 mr-20 mt-15">
-                    <h2 className="text-5xl font-stretch-expanded font-medium mb-5">Overview</h2>
+                    <h2 className="text-5xl font-stretch-expanded font-bubble font-medium mb-5">Overview</h2>
                     <div className="flex flex-row gap-6 items-start">
                         <p className="mb-15 text-xl/10 w-1/2">
                             This website is my little corner of the internet—a place where I share my projects, who I am, and everything that inspires me. It’s like a digital journal of my journey as a front-end developer and designer. More than just a portfolio, it’s a space that reflects me, my growth, and the things I love.
@@ -27,7 +27,7 @@ const Web = () => {
                         </div>
                     </div>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Inspiration</h2>
+                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Inspiration</h2>
                     <p className='mb-5 text-xl/10'>
                         When designing my website, I wanted it to feel calm, cozy, and easy to navigate—a space that truly reflects me. I’ve always loved websites that feel inviting, where everything flows naturally without feeling overwhelming. A huge inspiration for me was <a href='https://www.youtube.com/maisyleigh' className='font-semibold text-[#ff7a7a]'>Maisy Leigh</a>, the creator of <a href='https://cozyleigh.studio/?srsltid=AfmBOooGAhSoH_Qdc3yMwk8VEeCWC3RH8N8_dpcyicYMM_7Ir0CbxNjI' className='font-semibold text-[#ff7a7a]'>Cozy Leigh Studios</a>. Her approach to design focuses on bringing cozy and zen feelings to a chaotic world, and that idea really stuck with me. I love how her work creates a sense of peace, almost like stepping into a cozy, familiar space. That’s exactly what I wanted for my own website—somewhere that feels personal, comforting, and thoughtfully designed.
                     </p>
@@ -35,7 +35,7 @@ const Web = () => {
                         Beyond specific designers, I also took inspiration from nature, soft color palettes, and minimalist yet expressive layouts. I spent time researching different websites, colors, and typography styles that capture a relaxed and inviting atmosphere. I wanted my website to feel simple but full of personality, with small details that make it feel warm and unique. Most importantly, I wanted it to encourage slowing down—so much of the internet feels fast and chaotic, but I wanted my site to be a little pocket of peace where visitors could take their time and enjoy the experience.
                     </p>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5 '>What I Built</h2>
+                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5 '>What I Built</h2>
                     <p className='text-xl/10'> 
                         As the solo developer, I created everything from scratch—from the cozy design to the smooth functionality. I built the site using React, Vite, and Tailwind CSS, keeping the code lightweight and the experience seamless.
                     </p>
@@ -51,7 +51,7 @@ const Web = () => {
                         </li>
                     </ul>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-10'>Challenges & Solutions</h2>
+                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-10'>Challenges & Solutions</h2>
                         <div className="flex flex-row gap-8 items-start">
                             <div className="flex items-center justify-center bg-[#9caf88] border-3 border-[#7f966c] p-2 rounded-lg mb-15">
                                     <video width="620" height="540" className='rounded-sm' autoPlay loop muted>
@@ -69,7 +69,7 @@ const Web = () => {
                         </div>
                     </div>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Results</h2>
+                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Results</h2>
                     <p className='text-xl/10 mb-3'>
                     After a lot of trial and error (and one full reset), I finally have a site that I love. It’s cozy, zen, and 100% me. It’s not just a portfolio—it’s a digital space that reflects who I am as a designer and a person.
                     </p>
@@ -80,7 +80,7 @@ const Web = () => {
                     "The color scheme is so pretty and the project descriptions are so interesting to read." – User feedback
                     </p>
 
-                    <h2 className='text-5xl font-stretch-expanded font-medium mb-5'>Key Learnings</h2>
+                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Key Learnings</h2>
                     <ul className='list-disc marker:text-[#ff7a7a] ml-10 mb-5 text-xl/8'>
                         <li> <b className='font-semibold'>Starting over is okay.</b> Sometimes, the best way forward is a fresh start.
                         </li>

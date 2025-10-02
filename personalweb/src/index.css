@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 @import "tailwindcss";
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -62,3 +64,6 @@
   box-shadow: 10px 10px 0 #394a28;
 }
 
+.font-bubble {
+  font-family: 'Comfortaa', sans-serif;
+}
