@@ -94,7 +94,10 @@ const Purrr = () => {
                         <li> Overcame challenges with persistence and problem-solving.
                         </li>
                     </ul>
-
+                    <button className="text-m mb-5 pt-3 pb-3 pl-1 pr-1 w-32 text-[#fbf7ed] bg-[#f8a3a3] rounded-lg hover:bg-[#e17878]"
+                        onClick={() => window.history.back()} >
+                            ← Back
+                    </button>
                 </div>
              </div>
 

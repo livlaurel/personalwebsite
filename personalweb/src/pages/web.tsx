@@ -91,8 +91,12 @@ const Web = () => {
                         </li>
                     </ul>
                     <p className='text-xl/10 mb-3'>
-                        At the end of the day, this website is more than just a project—it’s a space that makes me happy, and I hope it makes visitors feel the same way.
+                        At the end of the day, this website is more than just a project; it’s a space that makes me happy, and I hope it makes visitors feel the same way.
                     </p>
+                    <button className="text-m mb-5 pt-3 pb-3 pl-1 pr-1 w-32 text-[#fbf7ed] bg-[#f8a3a3] rounded-lg hover:bg-[#e17878]"
+                        onClick={() => window.history.back()} >
+                            ← Back
+                    </button>
 
                 </div>
              </div>

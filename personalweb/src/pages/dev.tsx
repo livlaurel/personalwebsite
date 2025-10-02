@@ -33,7 +33,7 @@ const Dev = () => {
                                     <p className='text-base font-mono tracking-tighter m-5 mt-10'>CalmKeys is an endless typing game designed to help users practice their typing skills at their own pace.</p>
                                     <div className='flex justify-center'>
                                         <a href='#/calmkeys'>
-                                            <p className='text-sm font-mono font-bold tracking-tighter underline'>Learn More</p>
+                                            <p className='text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
@@ -65,14 +65,14 @@ const Dev = () => {
                             <div className='flex'>
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
                                 <a href='https://www.purrrsonality.com/'>
-                                    <img src={purrr} alt='purrr' className='w-50 h-50 rounded-full' />
+                                    <img src={purrr} alt='purrr' className='w-45 h-45 rounded-full' />
                                 </a>
                                 </div>
                                 <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
                                     <p className='text-base font-mono tracking-tighter m-5 mt-10'>Purrrsonality is a fun personality game that tells you what kind of cat you are! Meow ദ്ദി/ᐠ｡‸｡ᐟ\</p>
                                     <div className='flex justify-center'>
                                         <a href='#/purrrsonality'>
-                                            <p className='text-sm font-mono font-bold tracking-tighter underline'>Learn More</p>
+                                            <p className='text-sm font-mono font-bold text-[#e17878] tracking-tighter underline'>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@ const Dev = () => {
                                     <p className='text-base font-mono tracking-tighter m-5 mb-2 mt-6'>This is my personal website where I showcase my projects, share inspiration, and give you a glimpse into who I am, all while keeping things creative and fun!</p>
                                     <div className='flex justify-center'>
                                         <a href='#/website'>
-                                            <p className='text-sm font-mono font-bold tracking-tighter underline'>Learn More</p>
+                                            <p className='text-sm font-mono font-bold text-[#e17878] tracking-tighter underline'>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
