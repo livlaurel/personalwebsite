@@ -11,7 +11,7 @@ const Home = () => {
             <main className="bg-[#fff9f0] flex-grow p-7">
                 <section className="container mx-auto">
                     <h1 className="text-4xl font-bold text-[#1a2411] font-mono tracking-wider text-center">Meet Olivia Laurel...</h1>
-                    <p className="text-xl mt-2 text-[#7b8f65] font-sans italic font-stretch-semi-expanded tracking-wider text-center">Computer Science Student and Future Software Engineer/Designer</p>
+                    <p className="text-xl mt-2 text-[#7b8f65] font-sans italic font-stretch-semi-expanded tracking-wider text-center">Computer Science Student and Software Engineer/Designer</p>
                     <div className='flex justify-between items-center m-10'>
                         <a href='#/dev' className="box box-content rounded-md border-3 border-[#394a28] p-4 h-80 w-70 bg-[#9caf88] flex flex-col justify-between items-center custom-shadow hover-float">
                             <img src={dev} alt="dev" className="w-60 h-65" />
