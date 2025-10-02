@@ -12,11 +12,11 @@ const Header = () => {
                 </a>
                 <div className="flex-grow font-[Arial, Helvetica, sans-serif] flex font-bold underline justify-end items-center">
                     <div className="flex space-x-8 text-xl">
+                        <a href="#/dev" >
+                            <FaLaptopCode className="text-2xl" />
+                        </a>
                         <a href="#/about">
                             <FaUserAlt />                        
-                        </a>
-                        <a href="#/dev" >
-                            <FaLaptopCode />
                         </a>
                         <a href="#/inspire" >
                             <FaLightbulb />
