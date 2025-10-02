@@ -2,6 +2,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import calmkeys from '../imgs/calmkeys.png';
 import quote from '../video/ckdemo_quote.mp4';
+import click from '../sounds/FullSizeRender.mp3'
 
 const CalmKeys = () => {
     return (
@@ -77,10 +78,9 @@ const CalmKeys = () => {
                         </li>
                     </ul>
                     <button className="text-m mb-5 pt-3 pb-3 pl-1 pr-1 w-32 text-[#fbf7ed] bg-[#f8a3a3] rounded-lg hover:bg-[#e17878]"
-                        onClick={() => window.history.back()} >
+                        onClick={() => {const audio = new Audio(click); audio.playbackRate = 1.5; audio.play(); window.history.back()}} >
                             ← Back
                     </button>
-
                 </div>
              </div>
 

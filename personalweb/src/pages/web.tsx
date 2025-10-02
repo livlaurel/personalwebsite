@@ -3,6 +3,7 @@ import Footer from '../components/footer';
 import logo from '../imgs/logo.png';
 import v1 from '../video/v1.mp4';
 import web from '../imgs/web.jpeg';
+import click from '../sounds/FullSizeRender.mp3'
 
 const Web = () => {
     return (
@@ -94,10 +95,9 @@ const Web = () => {
                         At the end of the day, this website is more than just a project; it’s a space that makes me happy, and I hope it makes visitors feel the same way.
                     </p>
                     <button className="text-m mb-5 pt-3 pb-3 pl-1 pr-1 w-32 text-[#fbf7ed] bg-[#f8a3a3] rounded-lg hover:bg-[#e17878]"
-                        onClick={() => window.history.back()} >
+                        onClick={() => {const audio = new Audio(click); audio.playbackRate = 1.5; audio.play(); window.history.back()}} >
                             ← Back
                     </button>
-
                 </div>
              </div>
 
