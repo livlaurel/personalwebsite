@@ -13,7 +13,7 @@ const getRandomImages = (count: number) => {
     return shuffled.slice(0, count);
 };
 
-const Inspire = () => {
+const Inspiration = () => {
     const randomImages = useMemo(() => getRandomImages(12), []);
 
     return (
@@ -43,4 +43,4 @@ const Inspire = () => {
     );
 };
 
-export default Inspire;
+export default Inspiration;

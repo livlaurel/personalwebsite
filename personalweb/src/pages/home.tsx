@@ -20,7 +20,7 @@ const Home = () => {
                             <img src={pfp} alt="pfp" className="w-60 h-65" />
                             <h3 className="text-2xl font-semibold mt-4 text-[#1a2411] font-mono">About Me</h3>
                         </a>
-                        <a href='#/inspire' className="box box-content rounded-md border-3 border-[#394a28] p-4 h-80 w-70 bg-[#9caf88] flex flex-col justify-between items-center custom-shadow hover-float">
+                        <a href='#/inspiration' className="box box-content rounded-md border-3 border-[#394a28] p-4 h-80 w-70 bg-[#9caf88] flex flex-col justify-between items-center custom-shadow hover-float">
                             <img src={inspo} alt="inspo" className="w-60 h-65" />
                             <h3 className="text-2xl font-semibold mt-4 text-[#1a2411] font-mono">Inspiration</h3>
                         </a>
