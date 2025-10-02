@@ -18,7 +18,7 @@ const Header = () => {
                         <a href="#/about">
                             <FaUserAlt />                        
                         </a>
-                        <a href="#/inspire" >
+                        <a href="#/inspiration" >
                             <FaLightbulb />
                         </a>
                     </div>
