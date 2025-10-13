@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Header from '../components/header';
 import Footer from '../components/footer';
 import pfp from '../imgs/pfp.png';
@@ -5,13 +6,32 @@ import inspo from '../imgs/inspo.png';
 import dev from '../imgs/dev.png';
 
 const Home = () => {
+    const fullText = "Coomputer Science Student, Software Engineer, & Designer";
+    const [displayedText, setDisplayedText] = useState("");
+
+    useEffect(() => {
+        let index = 0;
+        const interval = setInterval(() => {
+            if (index < fullText.length - 1) {
+                setDisplayedText((prev) => prev + fullText[index]);
+                index++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 100);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className='flex flex-col h-screen'>
             <Header />
             <main className="bg-[#fff9f0] flex-grow p-7">
                 <section className="container mx-auto">
                     <h1 className="text-4xl font-bold text-[#1a2411] font-mono tracking-wider text-center">Meet Olivia Laurel...</h1>
-                    <p className="text-xl mt-3 text-[#7b8f65] font-bubble italic  text-center">Computer Science Student and Software Engineer/Designer</p>
+                    <p className="text-xl mt-3 text-[#7b8f65] font-mono text-center">
+                        {displayedText}
+                        <span className="blinking-cursor">_</span>
+                    </p>
                     <div className='flex justify-between items-center m-10'>
                         <a href='#/dev' className="box box-content rounded-md border-3 border-[#394a28] p-4 h-80 w-70 bg-[#9caf88] flex flex-col justify-between items-center custom-shadow hover-float">
                             <img src={dev} alt="dev" className="w-60 h-65" />

@@ -67,3 +67,16 @@
 .font-bubble {
   font-family: 'Comfortaa', sans-serif;
 }
+
+.blinking-cursor {
+  display: inline-block;
+  width: 1ch;
+  background-color: inherit;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
