@@ -10,7 +10,7 @@ const About = () => {
             <main className="bg-[#fff9f0] flex-grow p-4">
                 <div className='flex flex-row items-start'>
                     <div className='flex flex-col space-y-6 text-xl flex-1 ml-10 mr-30 max-w-3xl'>
-                        <img src={about} alt="about" className="w-100 h-10" />
+                        <img src={about} alt="about" className="w-100 h-15" />
                             <p>Hi I’m Olivia!</p>
                             <p className='ml-3 text-lg'>I'm Computer Science student and I have a passion for web design and frontend development.</p>
                             <p className='ml-3 text-lg'>Outside of studies, I love to draw, play video games, and bake. I'm currently playing through Hollow Knight and my favorite thing to bake is brown butter cookies.</p>
