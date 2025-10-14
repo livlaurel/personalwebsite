@@ -80,3 +80,32 @@
     opacity: 0;
   }
 }
+
+
+@media (max-width: 768px) {
+  .text-xl {
+    font-size: 1rem; 
+  }
+
+  .h-screen {
+    height: auto; 
+  }
+
+  .flex-row {
+    flex-direction: column; 
+  }
+
+  .p-4 {
+    padding: 1rem; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row; 
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+  }
+}
