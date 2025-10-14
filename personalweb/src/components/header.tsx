@@ -13,13 +13,13 @@ const Header = () => {
                 <div className="flex-grow font-[Arial, Helvetica, sans-serif] flex font-bold underline justify-end items-center">
                     <div className="flex space-x-8 text-xl">
                         <a href="#/dev" >
-                            <FaLaptopCode className="text-2xl" />
+                            <FaLaptopCode className="text-2xl text-[#394a28] hover:text-[#9caf88]" />
                         </a>
                         <a href="#/about">
-                            <FaUserAlt />                        
+                            <FaUserAlt className="text-[#394a28] hover:text-[#9caf88]" />                        
                         </a>
                         <a href="#/inspiration" >
-                            <FaLightbulb />
+                            <FaLightbulb className="text-[#394a28] hover:text-[#9caf88]" />
                         </a>
                     </div>
                 </div>

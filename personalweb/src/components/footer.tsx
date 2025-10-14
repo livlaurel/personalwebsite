@@ -6,13 +6,13 @@ const Footer = () => {
     return (
         <main className="bg-[#fff9f0]">
             <div className="flex justify-left mb-5 ml-5">
-                <a href="https://github.com/livlaurel" className="mr-4">
+                <a href="https://github.com/livlaurel" className="mr-4 text-[#394a28] hover:text-[#9caf88]">
                     <FaGithub size={24} />
                 </a>
-                <a href="https://www.instagram.com/liviaa.png/" className="mr-4">
+                <a href="https://www.instagram.com/liviaa.png/" className="mr-4 text-[#394a28] hover:text-[#9caf88]">
                     <TiSocialInstagram size={24}/>
                 </a>    
-                <a href="https://www.linkedin.com/in/olivialaurel/" className="mr-4">
+                <a href="https://www.linkedin.com/in/olivialaurel/" className="mr-4 text-[#394a28] hover:text-[#9caf88]">
                     <FaLinkedin size={24}/>
                 </a>    
             </div>    

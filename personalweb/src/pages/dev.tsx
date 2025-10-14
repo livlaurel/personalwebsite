@@ -14,11 +14,11 @@ const Dev = () => {
             <main className="bg-[#fff9f0] flex-grow p-4">
                 <div className='flex flex-col lg:flex-row items-start'>
                     <div className='flex flex-col space-y-6 flex-1 ml-10 max-w-3xl'>
-                        <div className="fade-in fade-in-1 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">Create</div>
-                        <div className="fade-in fade-in-2 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">Design</div>
-                        <div className="fade-in fade-in-3 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">Code</div>
+                        <div className="fade-in fade-in-1 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#394a28]">Create</div>
+                        <div className="fade-in fade-in-2 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#394a28]">Design</div>
+                        <div className="fade-in fade-in-3 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#394a28]">Code</div>
                         <p className='text-sm sm:text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
-                        <p className='text-sm italic font-mono font-semibold tracking-tighter'>scroll for more...</p>
+                        <p className='text-sm italic font-mono font-semibold tracking-tighter text-[#394a28]'>scroll for more...</p>
                     </div>
             
                     <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
