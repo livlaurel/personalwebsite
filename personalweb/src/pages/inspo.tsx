@@ -22,17 +22,17 @@ const Inspiration = () => {
             <Header />
             <main className="bg-[#fff9f0] flex-grow">
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className='underline font-bold text-[#9caf88] text-5xl'>My Inspirations for Life</h1>
-                    <p className='mt-5 mb-2 text-base font-mono tracking-1'>
+                <h1 className='underline font-bold text-[#9caf88] text-3xl sm:text-5xl text-center'>My Inspirations for Life</h1>
+                    <p className='mt-5 mb-2 text-sm sm:text-base font-mono tracking-1 text-center px-4 sm:px-0'>
                         A collection of colors, people, places, and moments that spark creativity, bring joy, and keep me motivated.
                     </p>
 
-                    <button className='flex items-center text-sm mb-3 font-style: italic' onClick={() => window.location.reload()}>
+                    <button className='flex mb-1 items-center text-sm font-style: italic' onClick={() => window.location.reload()}>
                         <MdOutlineRefresh className='mr-2' />  refresh for more inspiration
                     </button>
                 </div>
                 <div className="flex flex-col space-y-6 ml-5 mr-5 h-[435px] overflow-y-auto">
-                    <div className="grid grid-cols-4 gap-4">
+                    <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-5'>
                         {randomImages.map((src, index) => (
                             <img key={index} src={src} alt={`Inspiration ${index + 1}`} className="w-full h-auto rounded-md" />
                         ))}
