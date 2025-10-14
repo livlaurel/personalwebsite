@@ -12,12 +12,12 @@ const Dev = () => {
         <div className='flex flex-col h-screen'>
             <Header />
             <main className="bg-[#fff9f0] flex-grow p-4">
-                <div className='flex flex-row items-start'>
+                <div className='flex flex-col lg:flex-row items-start'>
                     <div className='flex flex-col space-y-6 flex-1 ml-10 max-w-3xl'>
-                        <div className="fade-in fade-in-1 text-6xl font-bold tracking-tighter">Create</div>
-                        <div className="fade-in fade-in-2 text-6xl font-bold tracking-tighter">Design</div>
-                        <div className="fade-in fade-in-3 text-6xl font-bold tracking-tighter">Code</div>
-                        <p className='text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
+                        <div className="fade-in fade-in-1 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">Create</div>
+                        <div className="fade-in fade-in-2 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">Design</div>
+                        <div className="fade-in fade-in-3 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">Code</div>
+                        <p className='text-sm sm:text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
                         <p className='text-sm italic font-mono font-semibold tracking-tighter'>scroll for more...</p>
                     </div>
             
@@ -33,7 +33,7 @@ const Dev = () => {
                                     <p className='text-base font-mono tracking-tighter m-5 mt-10'>CalmKeys is an endless typing game designed to help users practice their typing skills at their own pace.</p>
                                     <div className='flex justify-center'>
                                         <a href='#/calmkeys'>
-                                            <p className='text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
+                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ const Dev = () => {
                                     <p className='text-base font-mono tracking-tighter m-5 mt-10'>Purrrsonality is a fun personality game that tells you what kind of cat you are! Meow ദ്ദി/ᐠ｡‸｡ᐟ\</p>
                                     <div className='flex justify-center'>
                                         <a href='#/purrrsonality'>
-                                            <p className='text-sm font-mono font-bold text-[#e17878] tracking-tighter underline'>Learn More</p>
+                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@ const Dev = () => {
                                     <p className='text-base font-mono tracking-tighter m-5 mb-2 mt-6'>This is my personal website where I showcase my projects, share inspiration, and give you a glimpse into who I am, all while keeping things creative and fun!</p>
                                     <div className='flex justify-center'>
                                         <a href='#/website'>
-                                            <p className='text-sm font-mono font-bold text-[#e17878] tracking-tighter underline'>Learn More</p>
+                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
