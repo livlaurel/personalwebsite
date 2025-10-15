@@ -13,7 +13,7 @@ const About = () => {
                         <img src={about} alt="about" className="w-full lg:w-100 h-auto" />
                         <p>Hi I’m <span className="font-bold text-[#e17878]">Olivia</span>!</p>
                         <p className='ml-3 text-base lg:text-lg'>I'm a Computer Science student and I have a passion for <span className="text-[#778965] font-semibold">web design</span> and <span className="text-[#778965] font-semibold">frontend development.</span></p>
-                        <p className='ml-3 text-base lg:text-lg'>Outside of studies, I love to draw, play video games, and bake. I'm currently playing through Hollow Knight and my favorite thing to bake is <a href='https://drive.google.com/file/d/1HNvBg0IX_yG7jqlOhc_twzikbHFyxxtt/view?usp=sharing' className="font-semibold text-[#778965]">brown butter cookies.</a></p>
+                        <p className='ml-3 text-base lg:text-lg'>Outside of studies, I love to draw, play video games, and bake. I'm currently playing through Hollow Knight and my favorite thing to bake is <a href='https://drive.google.com/file/d/1HNvBg0IX_yG7jqlOhc_twzikbHFyxxtt/view?usp=sharing' className="font-semibold text-[#778965]">brown butter cookies.</a> <span className="text-xs"> &lt;-click 4 recipe hehe</span></p>
                         <p className='ml-3 text-base lg:text-lg'>I built this website as a way to document my journey in software development, share projects, and show my growth as a developer. </p>
                         <p className='ml-3 text-base lg:text-lg'>Feel free to explore and reach out if you’d like to connect!</p>
                         <p>📍 Based in Texas | 💻 Frontend Dev & Designer</p>
