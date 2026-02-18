@@ -4,7 +4,7 @@ import calmkeys from '../imgs/calmkeys.png';
 import quote from '../video/ckdemo_quote.mp4';
 import click from '../sounds/FullSizeRender.mp3'
 
-const CalmKeys = () => {
+const Booth = () => {
     return (
         <div className='flex flex-col h-screen'>
             <Header />
@@ -12,7 +12,7 @@ const CalmKeys = () => {
               <div className='flex flex-col h-[500px] overflow-y-auto'>
                 <div className='flex flex-col justify-start items-center'>
                     <img src={calmkeys} alt='calmkeys' className='w-90 h-40' />
-                    <p className='font-mono font-medium tracking-tighter'>A Relaxing Typing Game for Focused Practice</p>
+                    <p className='font-mono font-medium tracking-tighter'>A Relaxing Typctice</p>
                 </div>
 
 
@@ -90,4 +90,4 @@ const CalmKeys = () => {
     )
 }
 
-export default CalmKeys;
+export default Booth;

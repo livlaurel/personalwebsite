@@ -3,9 +3,13 @@ import Footer from '../components/footer';
 import calmkeys from '../imgs/calm_keys_logo.png';
 import purrr from '../imgs/Purrrsonality.png';
 import logo from '../imgs/logo.png';
+import booth from '../imgs/booth.png'
 import { FaReact, FaGithub, FaGit } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss } from 'react-icons/si';
 import { FaCss3Alt } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { SiFirebase } from "react-icons/si";
+import { SiFlask } from "react-icons/si";
 
 const Dev = () => {
     return (
@@ -20,7 +24,6 @@ const Dev = () => {
                         <p className='text-sm sm:text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
                         <p className='text-sm italic font-mono font-semibold tracking-tighter text-[#394a28]'>scroll for more...</p>
                     </div>
-            
                     <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
                             <div className='flex'>
@@ -61,6 +64,55 @@ const Dev = () => {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
+                            <div className='flex'>
+                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
+                                    <a href='https://github.com/livlaurel/Booth-Buddy'>
+                                    <img src={booth} alt='boothbuddy' className='w-50 h-50 rounded-full' />
+                                    </a>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
+                                    <p className='text-base font-mono tracking-tighter m-5 mt-10'>Booth Buddy is a web-based photo booth that lets users capture and customize digital photo strips! </p>
+                                    <div className='flex justify-center'>
+                                        <a href='#/boothbuddy'>
+                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
+                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
+                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                        <ul className="grid grid-cols-4 gap-4 justify-items-center text-lg font-mono tracking-tighter">
+                                            <li>
+                                                <FaReact className="text-sky-500 text-5xl" />
+                                            </li>                                                
+                                            <li>
+                                                <SiTypescript className="text-yellow-500 text-5xl" />
+                                            </li>
+                                            <li>
+                                                <SiTailwindcss className="text-teal-500 text-5xl" />
+                                            </li>
+                                            <li>
+                                                <FaGithub className="text-5xl" /></li>
+                                            <li>
+                                                <FaGit className="text-orange-500 text-5xl" />
+                                            </li>
+                                            <li>
+                                                <SiFlask className="text-stone-950 text-5xl" />
+                                            </li>
+                                            <li>
+                                                <SiFirebase className="text-red-700 text-5xl" />
+                                            </li>
+                                            <li>
+                                                <FaPython className="text-amber-400 text-5xl" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
                             <div className='flex'>
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>

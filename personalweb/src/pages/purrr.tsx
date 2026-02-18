@@ -33,7 +33,7 @@ const Purrr = () => {
 
                     <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Inspiration</h2>
                     <p className='mb-5 text-xl/10'>
-                        I was inspired by the many personality quizzes I used to take as a kid—I always found it fascinating how just a few questions could offer insight into someone’s personality. I chose to center the game around cats for two reasons: first, cats have incredibly distinct personalities across different breeds, making it interesting to research how certain traits align with different types of people; and second, I simply love cats. 
+                        I was inspired by the many personality quizzes I used to take as a kid. I always found it fascinating how just a few questions could offer insight into someone’s personality. I chose to center the game around cats for two reasons: first, cats have incredibly distinct personalities across different breeds, making it interesting to research how certain traits align with different types of people; and second, I simply love cats. 
                     </p>
                     <p className='mb-15 text-xl/10'>
                         The decision to frame the questions around a school exam came from my own experiences in school, where I noticed how differently people approach tests—some see them as a major source of stress, while others treat them like just another day. I believe that exams bring out unique aspects of a person’s personality, from preparation styles to test-taking strategies and post-exam reactions. Since exams are something everyone can relate to, it felt like the perfect scenario to make Purrrsonality engaging, fun, and universally understandable.
@@ -41,7 +41,7 @@ const Purrr = () => {
 
                     <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5 '>What I Built</h2>
                     <p className='text-xl/10'> 
-                        As the solo developer, I designed and developed the entire experience, from the interactive quiz flow to the final personality reveal.
+                        As developer, I designed and developed the entire experience, from the interactive quiz flow to the final personality reveal.
                     </p>
                     <p className='text-xl/10'> 
                      Purrrsonality features:
