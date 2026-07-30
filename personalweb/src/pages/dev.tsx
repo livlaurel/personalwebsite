@@ -2,7 +2,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import calmkeys from '../imgs/calm_keys_logo.png';
 import purrr from '../imgs/Purrrsonality.png';
-import logo from '../imgs/logo.png';
+import logo from '../imgs/logo.svg';
 import booth from '../imgs/booth.png'
 import { FaReact, FaGithub, FaGit } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss } from 'react-icons/si';
@@ -155,7 +155,7 @@ const Dev = () => {
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
                             <div className='flex'>
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
-                                    <img src={logo} alt='web' className='w-40 h-40 mt-5 rounded-full' />
+                                    <img src={logo} alt='web' className='w-70 h-70 mt-5 rounded-full' />
                                 </div>
                                 <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
                                     <p className='text-base font-mono tracking-tighter m-5 mb-2 mt-6'>This is my personal website where I showcase my projects, share inspiration, and give you a glimpse into who I am, all while keeping things creative and fun!</p>

@@ -1,4 +1,4 @@
-import logo from "../imgs/logo.png";
+import logo from "../imgs/logo.svg";
 import { FaUserAlt } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";

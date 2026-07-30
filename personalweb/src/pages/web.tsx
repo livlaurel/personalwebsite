@@ -1,6 +1,6 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import logo from '../imgs/logo.png';
+import logo from '../imgs/logo.svg';
 import v1 from '../video/v1.mp4';
 import web from '../imgs/web.jpeg';
 
