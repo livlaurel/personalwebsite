@@ -49,21 +49,27 @@ const Dev = () => {
                                 <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
                                     <div className='flex flex-col ml-20 m-5 mt-8'> 
                                         <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                        <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
-                                            <li className='flex items-center w-1/3 justify-center'>
+                                        <ul className="grid grid-cols-4 gap-4 justify-items-center text-lg font-mono tracking-tighter">
+                                            <li className='flex items-center  justify-center'>
                                                 <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
                                             </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                            <li className='flex items-center mb-4  justify-center'>
                                                 <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
                                             </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
+                                            <li className='flex items-center mb-4  justify-center'>
+                                                <img src={svgIcons.nextdotjs} alt="React" className='w-10 h-10 mr-2' />
                                             </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                            <li className='flex items-center mb-4  justify-center'>
                                                 <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
                                             </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                            <li className='flex items-center mb-4  justify-center'>
                                                 <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
+                                            </li>
+                                            <li>
+                                                <img src={svgIcons.firebase} alt="Python" className='w-10 h-10' />
+                                            </li>
+                                            <li>
+                                                <img src={svgIcons.python} alt="Python" className='w-10 h-10' />
                                             </li>
                                         </ul>
                                     </div>
