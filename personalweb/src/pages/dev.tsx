@@ -4,12 +4,18 @@ import calmkeys from '../imgs/calm_keys_logo.png';
 import purrr from '../imgs/Purrrsonality.png';
 import logo from '../imgs/logo.svg';
 import booth from '../imgs/booth.png'
-import { FaReact, FaGithub, FaGit } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss } from 'react-icons/si';
-import { FaCss3Alt } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiFirebase } from "react-icons/si";
-import { SiFlask } from "react-icons/si";
+import sprint from "../imgs/Sprint.svg"
+const svgs = import.meta.glob('../imgs/svgs/*.svg', { eager: true });
+
+const svgIcons = Object.fromEntries(
+  Object.entries(svgs).map(([key, value]) => {
+    const name = key.split('/').pop()?.replace('.svg', '');
+    return [name, (value as { default: string }).default];
+  })
+);
+
+console.log(svgIcons.css); 
+
 
 const Dev = () => {
     return (
@@ -25,6 +31,46 @@ const Dev = () => {
                         <p className='text-sm italic font-mono font-semibold tracking-tighter text-[#394a28]'>scroll for more...</p>
                     </div>
                     <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
+                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
+                            <div className='flex'>
+                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
+                                    <a href='https://github.com/livlaurel/Sprint'>
+                                    <img src={sprint} alt='calmkeys' className='w-50 h-50 rounded-full' />
+                                    </a>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
+                                    <p className='text-base font-mono tracking-tighter m-3 mt-5'>Sprint is a project management app built for software teams. With a clean and intuitive workspace, it's perfect for tracking issues and managing sprints</p>
+                                    <div className='flex justify-center'>
+                                        <a href='#/sprint'>
+                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
+                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
+                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
+                                        <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
+                                            <li className='flex items-center w-1/3 justify-center'>
+                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
                             <div className='flex'>
                                 <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
@@ -45,19 +91,19 @@ const Dev = () => {
                                         <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
                                         <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
                                             <li className='flex items-center w-1/3 justify-center'>
-                                                <FaReact className='text-sky-500 text-5xl mr-2' /> 
+                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
                                             </li>
                                             <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <SiTypescript  className='text-yellow-500 text-5xl mr-2'/> 
+                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
                                             </li>
                                             <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <SiTailwindcss  className='text-teal-500 text-5xl mr-2'/> 
+                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
                                             </li>
                                             <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <FaGithub className='text-5xl'/> 
+                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
                                             </li>
                                             <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <FaGit className='text-orange-500 text-5xl mr-2'/> 
+                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
                                             </li>
                                         </ul>
                                     </div>
@@ -84,28 +130,29 @@ const Dev = () => {
                                     <div className='flex flex-col ml-20 m-5 mt-8'> 
                                         <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
                                         <ul className="grid grid-cols-4 gap-4 justify-items-center text-lg font-mono tracking-tighter">
-                                            <li>
-                                                <FaReact className="text-sky-500 text-5xl" />
-                                            </li>                                                
-                                            <li>
-                                                <SiTypescript className="text-yellow-500 text-5xl" />
+                                            <li className='flex items-center  justify-center'>
+                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4  justify-center'>
+                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
+                                            </li>
+                                            <li className='flex items-center mb-4  justify-center'>
+                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4  justify-center'>
+                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
+                                            </li>
+                                            <li className='flex items-center mb-4  justify-center'>
+                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
                                             </li>
                                             <li>
-                                                <SiTailwindcss className="text-teal-500 text-5xl" />
+                                                <img src={svgIcons.flask} alt="Python" className='w-10 h-10' />
                                             </li>
                                             <li>
-                                                <FaGithub className="text-5xl" /></li>
-                                            <li>
-                                                <FaGit className="text-orange-500 text-5xl" />
+                                                <img src={svgIcons.firebase} alt="Python" className='w-10 h-10' />
                                             </li>
                                             <li>
-                                                <SiFlask className="text-stone-950 text-5xl" />
-                                            </li>
-                                            <li>
-                                                <SiFirebase className="text-red-700 text-5xl" />
-                                            </li>
-                                            <li>
-                                                <FaPython className="text-amber-400 text-5xl" />
+                                                <img src={svgIcons.python} alt="Python" className='w-10 h-10' />
                                             </li>
                                         </ul>
                                     </div>
@@ -132,21 +179,21 @@ const Dev = () => {
                                     <div className='flex flex-col ml-20 m-5 mt-8'> 
                                             <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
                                             <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
-                                                <li className='flex items-center w-1/3 justify-center'>
-                                                    <FaReact className='text-sky-500 text-5xl mr-2' /> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                    <SiTypescript  className='text-yellow-500 text-5xl mr-2'/> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                    <FaCss3Alt className='text-blue-600 text-5xl mr-2'/> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                    <FaGithub className='text-5xl'/> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                    <FaGit className='text-orange-500 text-5xl mr-2'/> 
-                                                </li>
+                                            <li className='flex items-center w-1/3 justify-center'>
+                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <img src={svgIcons.css} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
+                                            </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -169,21 +216,21 @@ const Dev = () => {
                                     <div className='flex flex-col ml-20 m-5 mt-8'> 
                                             <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
                                             <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
-                                                <li className='flex items-center w-1/3 justify-center'>
-                                                    <FaReact className='text-sky-500 text-5xl mr-2' /> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                    <SiTypescript  className='text-yellow-500 text-5xl mr-2'/> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                    <SiTailwindcss  className='text-teal-500 text-5xl mr-2'/> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                    <FaGithub className='text-5xl'/> 
-                                                </li>
-                                                <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                    <FaGit className='text-orange-500 text-5xl mr-2'/> 
-                                                </li>
+                                            <li className='flex items-center w-1/3 justify-center'>
+                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
+                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
+                                            </li>
+                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
+                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
+                                            </li>
                                             </ul>
                                         </div>
                                     </div>
