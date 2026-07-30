@@ -6,7 +6,7 @@ import inspo from '../imgs/inspo.png';
 import dev from '../imgs/dev.png';
 
 const Home = () => {
-    const fullText = "Frontend/Fullstack Software Engineer & UI/UX Designer";
+    const fullText = "Frrontend/Fullstack Software Engineer & UI/UX Designer";
     const [displayedText, setDisplayedText] = useState("");
 
     useEffect(() => {
