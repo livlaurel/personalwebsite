@@ -1,8 +1,7 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import logo from '../imgs/logo.svg';
-import v1 from '../video/v1.mp4';
-import web from '../imgs/web.jpeg';
+import newweb from '../video/newweb.mp4'
 
 const Web = () => {
     return (
@@ -36,7 +35,7 @@ const Web = () => {
                                 muted
                                 playsInline
                             >
-                                <source src={v1} type="video/mp4" />
+                                <source src={newweb} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -49,9 +48,9 @@ const Web = () => {
 
                         <p className="max-w-2xl text-base leading-7 text-[#394a28]">
                             My personal website is a digital space for my
-                            projects, interests, and inspiration. I wanted it
-                            to feel more like a small corner of the internet
-                            than a traditional portfolio.
+                            projects and interests. I wanted it
+                            to feel more like a small corner of the internet that shows who I really am rather 
+                            than a typical portfolio that only shows project work.
                         </p>
                     </section>
 
@@ -61,10 +60,8 @@ const Web = () => {
                         </h2>
 
                         <p className="max-w-2xl text-base leading-7 text-[#394a28]">
-                            I wanted a calm, cozy experience with easy
-                            navigation, nature-inspired visuals, soft
-                            palettes, and minimalist layouts that still feel
-                            personal and expressive.
+                            I wanted a calm and cozy experience with easy
+                            navigation and minimalist layouts and fun animations that felt like me but a website.
                         </p>
                     </section>
 
@@ -129,12 +126,11 @@ const Web = () => {
                                 gathered feedback from developers and UX/UI
                                 designers.
                             </p>
+                            <p className="max-w-2xl text-base leading-7 text-[#394a28] mb-7">
+                                As for the overall design, a big part of my inspiration comes from the japandi interior design style and color paletes.
+                                I love how warm and comforting the color paletes and style feels so I used that plus my own interests in minimalism and animation to create the websites UX/UI.
+                            </p>
 
-                            <img
-                                src={web}
-                                alt="Personal website"
-                                className="w-4/5 mx-auto border-5 border-[#778965] rounded-sm"
-                            />
                         </div>
                     </section>
 

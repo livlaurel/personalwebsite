@@ -66,8 +66,7 @@ const Purrrsonality = () => {
                                     Dynamic Quiz
                                 </h3>
                                 <p className="text-sm leading-6 text-[#686a62]">
-                                    Decisions throughout the experience
-                                    dynamically determine the final result.
+                                    Decisions throughout the experience determine the final result.
                                 </p>
                             </div>
 
@@ -87,7 +86,7 @@ const Purrrsonality = () => {
                                 </h3>
                                 <p className="text-sm leading-6 text-[#686a62]">
                                     The quiz follows the user through a full
-                                    exam-day experience.
+                                    exam-day storyline.
                                 </p>
                             </div>
 
@@ -110,11 +109,12 @@ const Purrrsonality = () => {
 
                         <div>
                             <p className="max-w-2xl text-base leading-7 text-[#394a28] mb-7">
-                                The project was inspired by childhood
+                                This project was inspired by childhood
                                 personality quizzes and the distinct
-                                personalities of cats. The school exam
-                                setting adds a familiar and relatable
-                                scenario to the experience.
+                                personalities of cats. I also thought the school exam
+                                setting is a familiar and relatable
+                                scenario to the experience but it's something everyone approaches
+                                and thinks about differently.
                             </p>
 
                             <div className="w-4/5 mx-auto border-5 border-[#778965] rounded-sm">
@@ -139,7 +139,7 @@ const Purrrsonality = () => {
 
                         <p className="max-w-2xl text-base leading-7 text-[#394a28]">
                             This project was one of my first larger React and
-                            TypeScript projects. I learned how to structure a
+                            TypeScript projects and the first website I ever made public. I learned how to structure a
                             quiz backend, persist user choices, and make sure
                             answers were correctly tracked to each result.
                         </p>
