@@ -292,8 +292,8 @@ const Inspiration = () => {
             <Header />
             <main className="bg-[#fff9f0] flex-grow">
                 <div className='flex flex-col justify-center items-center'>
-                <h1 className='underline font-bold text-[#9caf88] text-3xl sm:text-5xl text-center'>My Inspirations for Life</h1>
-                    <p className='mt-5 mb-2 text-sm sm:text-base font-mono tracking-1 text-center px-4 sm:px-0'>
+                <h1 className='font-bold text-[#394a28] text-3xl sm:text-5xl text-center'>My Inspirations for Life</h1>
+                    <p className='mt-5 mb-2 mx-auto mt-3 font-mono text-sm leading-relaxed tracking-tight text-center text-[#394a28]/80 sm:text-base'>
                         A collection of colors, people, places, and moments that give me inspiration and keep me motivated.
                     </p>
 

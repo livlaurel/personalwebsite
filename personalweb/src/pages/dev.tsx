@@ -1,253 +1,333 @@
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import calmkeys from '../imgs/calm_keys_logo.png';
 import purrr from '../imgs/Purrrsonality.png';
 import logo from '../imgs/logo.svg';
-import booth from '../imgs/booth.png'
-import sprint from "../imgs/Sprint.svg"
-const svgs = import.meta.glob('../imgs/svgs/*.svg', { eager: true });
+import booth from '../imgs/booth.png';
+import sprint from '../imgs/Sprint.svg';
+import pytexas from '../imgs/forweb.svg';
 
-const svgIcons = Object.fromEntries(
-  Object.entries(svgs).map(([key, value]) => {
-    const name = key.split('/').pop()?.replace('.svg', '');
-    return [name, (value as { default: string }).default];
-  })
-);
+type Project = {
+    name: string;
+    image: string;
+    href: string;
+    type: string;
+};
 
-console.log(svgIcons.css); 
+const codeProjects: Project[] = [
+    {
+        name: 'Sprint',
+        image: sprint,
+        href: '#/sprint',
+        type: 'WEB APP',
+    },
+    {
+        name: 'CalmKeys',
+        image: calmkeys,
+        href: '#/calmkeys',
+        type: 'WEB GAME',
+    },
+    {
+        name: 'Booth Buddy',
+        image: booth,
+        href: '#/boothbuddy',
+        type: 'WEB APP',
+    },
+    {
+        name: 'Purrrsonality',
+        image: purrr,
+        href: '#/purrrsonality',
+        type: 'WEB GAME',
+    },
+    {
+        name: 'Personal Website',
+        image: logo,
+        href: '#/website',
+        type: 'PORTFOLIO',
+    },
+];
 
+const designProjects: Project[] = [
+    {
+        name: 'Personal Brand',
+        image: logo,
+        href: '#/website',
+        type: 'BRANDING',
+    },
+    {
+        name: 'PyTexas 2027',
+        image: pytexas,
+        href: '#/pytexas',
+        type: 'LOGO',
+    },
+];
+
+const ProjectCard = ({
+    project,
+    index,
+    total,
+}: {
+    project: Project;
+    index: number;
+    total: number;
+}) => {
+    const center = (total - 1) / 2;
+    const distance = index - center;
+    const x = distance * 112;
+    const y = -145 + Math.abs(distance) * 30;
+    const rotate = distance * 6;
+
+    return (
+        <motion.a
+            href={project.href}
+            className="absolute left-1/2 top-0 w-[150px] -translate-x-1/2 sm:w-[175px]"
+            style={{ zIndex: 70 + index }}
+            initial={{
+                opacity: 0,
+                x: 0,
+                y: 40,
+                rotate: 0,
+                scale: 0.55,
+            }}
+            animate={{
+                opacity: 1,
+                x,
+                y,
+                rotate,
+                scale: 1,
+            }}
+            exit={{
+                opacity: 0,
+                x: 0,
+                y: 40,
+                rotate: 0,
+                scale: 0.55,
+            }}
+            transition={{
+                duration: 0.55,
+                delay: index * 0.055,
+                ease: [0.16, 1, 0.3, 1],
+            }}
+            whileHover={{
+                y: y - 10,
+                rotate: rotate * 0.4,
+                scale: 1.04,
+                zIndex: 100,
+                transition: {
+                    duration: 0.2,
+                },
+            }}
+        >
+            <div className="rounded-xl border border-[#394a28]/10 bg-[#fff9f0] p-2 shadow-[0_15px_35px_rgba(57,74,40,0.14)]">
+                <div className="flex aspect-square items-center justify-center overflow-hidden rounded-lg bg-[#f1eadc]">
+                    <img
+                        src={project.image}
+                        alt={project.name}
+                        className="h-full w-full object-contain p-4"
+                    />
+                </div>
+
+                <div className="px-1 pb-1 pt-3">
+                    <p className="font-mono text-xs font-semibold tracking-tight text-[#394a28]">
+                        {project.name}
+                    </p>
+
+                    <p className="mt-1 font-mono text-[9px] tracking-[0.14em] text-[#394a28]/45">
+                        {project.type}
+                    </p>
+                </div>
+            </div>
+        </motion.a>
+    );
+};
+
+const Folder = ({
+    label,
+    projects,
+}: {
+    label: string;
+    projects: Project[];
+}) => {
+    const [open, setOpen] = useState(false);
+
+    return (
+        <div className="relative h-[430px]">
+            <div className="pointer-events-none absolute inset-x-0 top-0 z-[70] h-[300px] overflow-visible">
+                <AnimatePresence>
+                    {open &&
+                        projects.map((project, index) => (
+                            <div
+                                key={project.name}
+                                className="pointer-events-auto"
+                            >
+                                <ProjectCard
+                                    project={project}
+                                    index={index}
+                                    total={projects.length}
+                                />
+                            </div>
+                        ))}
+                </AnimatePresence>
+            </div>
+            <motion.button
+                type="button"
+                onClick={() => setOpen((value) => !value)}
+                className="
+                    absolute
+                    bottom-0
+                    left-1/2
+                    z-[40]
+                    w-[360px]
+                    -translate-x-1/2
+                    cursor-pointer
+                    outline-none
+                    sm:w-[430px]
+                "
+                whileHover={{ y: -3 }}
+                whileTap={{ scale: 0.995 }}
+            >
+                <div className="relative h-[300px] sm:h-[330px]">
+                    <svg
+                        className="absolute inset-0 h-full w-full"
+                        viewBox="0 0 430 330"
+                        preserveAspectRatio="none"
+                    >
+                        <defs>
+                            <filter
+                                id={`folder-shadow-${label}`}
+                                x="-20%"
+                                y="-20%"
+                                width="140%"
+                                height="150%"
+                            >
+                                <feDropShadow
+                                    dx="0"
+                                    dy="14"
+                                    stdDeviation="14"
+                                    floodColor="#394a28"
+                                    floodOpacity="0.14"
+                                />
+                            </filter>
+                        </defs>
+
+                        <path
+                            d="
+                                M 24 0
+                                H 135
+                                C 148 0 158 4 168 13
+                                L 185 29
+                                H 407
+                                C 420 29 430 39 430 52
+                                V 306
+                                C 430 319 420 330 407 330
+                                H 23
+                                C 10 330 0 320 0 307
+                                V 24
+                                C 0 11 10 0 24 0
+                                Z
+                            "
+                            fill="#394a28"
+                            filter={`url(#folder-shadow-${label})`}
+                        />
+                    </svg>
+
+                    <motion.div
+                        animate={{
+                            y: open ? 7 : 0,
+                        }}
+                        transition={{
+                            duration: 0.35,
+                            ease: [0.16, 1, 0.3, 1],
+                        }}
+                        className="
+                            absolute
+                            bottom-0
+                            left-0
+                            right-0
+                            h-[235px]
+                            rounded-[22px]
+                            bg-[#9db089]
+                            sm:h-[260px]
+                            border-3
+                            border-[#394a28]
+                        "
+                    >
+                        <div
+                            className="
+                                absolute
+                                inset-[8px]
+                                rounded-[17px]
+                                border-3
+                                border-[#394a28]/20
+                            "
+                        />
+
+                        <div className="absolute bottom-8 left-8 right-8 sm:bottom-10 sm:left-10 sm:right-10">
+                            <div className="flex items-end justify-between">
+                                <span className="font-sans text-lg tracking-[-0.06em] text-[#394a28] sm:text-4xl">
+                                    {label}
+                                </span>
+
+                                <span className="font-mono text-[10px] tracking-[0.18em] text-[#394a28]/45">
+                                    {String(projects.length).padStart(2, '0')}
+                                </span>
+                            </div>
+
+                            <div className="mt-4 h-px bg-[#394a28]/25" />
+                        </div>
+                    </motion.div>
+                </div>
+            </motion.button>
+        </div>
+    );
+};
 
 const Dev = () => {
     return (
-        <div className='flex flex-col h-screen'>
+        <div className="flex min-h-screen flex-col bg-[#fff9f0]">
             <Header />
-            <main className="bg-[#fff9f0] flex-grow p-4">
-                <div className='flex flex-col lg:flex-row items-start'>
-                    <div className='flex flex-col space-y-6 flex-1 ml-10 max-w-3xl'>
-                        <div className="fade-in fade-in-1 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#394a28]">Create</div>
-                        <div className="fade-in fade-in-2 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#394a28]">Design</div>
-                        <div className="fade-in fade-in-3 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#394a28]">Code</div>
-                        <p className='text-sm sm:text-base font-mono tracking-tighter'>Here’s where I keep all my current projects! I’ve put a lot of love into them, and I hope you enjoy checking them out as much as I enjoyed making them. Have fun exploring! </p>
-                        <p className='text-sm italic font-mono font-semibold tracking-tighter text-[#394a28]'>scroll for more...</p>
-                    </div>
-                    <div className="flex flex-col space-y-6 ml-10 h-[500px] overflow-y-auto">
-                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
-                            <div className='flex'>
-                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
-                                    <a href='https://github.com/livlaurel/Sprint'>
-                                    <img src={sprint} alt='calmkeys' className='w-50 h-50 rounded-full' />
-                                    </a>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
-                                    <p className='text-base font-mono tracking-tighter m-3 mt-5'>Sprint is a project management app built for software teams. With a clean and intuitive workspace, it's perfect for tracking issues and managing sprints</p>
-                                    <div className='flex justify-center'>
-                                        <a href='#/sprint'>
-                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
-                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                        <ul className="grid grid-cols-4 gap-4 justify-items-center text-lg font-mono tracking-tighter">
-                                            <li className='flex items-center  justify-center'>
-                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.nextdotjs} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
-                                            </li>
-                                            <li>
-                                                <img src={svgIcons.firebase} alt="Python" className='w-10 h-10' />
-                                            </li>
-                                            <li>
-                                                <img src={svgIcons.python} alt="Python" className='w-10 h-10' />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+
+            <main className="flex-grow px-5sm:px-8 lg:px-12">
+                <div className="mx-auto max-w-7xl">
+                    <section className="mx-auto max-w-3xl text-center">
+                        <div className="flex flex-wrap justify-center gap-x-4">
+                            <h1 className="fade-in fade-in-1 text-5xl font-bold tracking-[-0.055em] text-[#394a28] sm:text-6xl lg:text-7xl">
+                                Create.
+                            </h1>
+
+                            <h1 className="fade-in fade-in-2 text-5xl font-bold tracking-[-0.055em] text-[#394a28] sm:text-6xl lg:text-7xl">
+                                Design.
+                            </h1>
+
+                            <h1 className="fade-in fade-in-3 text-5xl font-bold tracking-[-0.055em] text-[#394a28] sm:text-6xl lg:text-7xl">
+                                Code.
+                            </h1>
                         </div>
 
-                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
-                            <div className='flex'>
-                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
-                                    <a href='https://livlaurel.github.io/CalmKeys/'>
-                                    <img src={calmkeys} alt='calmkeys' className='w-50 h-50 rounded-full' />
-                                    </a>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
-                                    <p className='text-base font-mono tracking-tighter m-5 mt-10'>CalmKeys is an endless typing game designed to help users practice their typing skills at their own pace.</p>
-                                    <div className='flex justify-center'>
-                                        <a href='#/calmkeys'>
-                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
-                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                        <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
-                                            <li className='flex items-center w-1/3 justify-center'>
-                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p className="mx-auto mt-3 max-w-2xl font-mono text-sm leading-relaxed tracking-tight text-[#394a28]/80 sm:text-base">
+                            A collection of my work in software engineering and design.
+                        </p>
+                    </section>
 
-                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
-                            <div className='flex'>
-                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
-                                    <a href='https://github.com/livlaurel/Booth-Buddy'>
-                                    <img src={booth} alt='boothbuddy' className='w-50 h-50 rounded-full' />
-                                    </a>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
-                                    <p className='text-base font-mono tracking-tighter m-5 mt-10'>Booth Buddy is a web-based photo booth that lets users capture and customize digital photo strips! </p>
-                                    <div className='flex justify-center'>
-                                        <a href='#/boothbuddy'>
-                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
-                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                        <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                        <ul className="grid grid-cols-4 gap-4 justify-items-center text-lg font-mono tracking-tighter">
-                                            <li className='flex items-center  justify-center'>
-                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
-                                            </li>
-                                            <li className='flex items-center mb-4  justify-center'>
-                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
-                                            </li>
-                                            <li>
-                                                <img src={svgIcons.flask} alt="Python" className='w-10 h-10' />
-                                            </li>
-                                            <li>
-                                                <img src={svgIcons.firebase} alt="Python" className='w-10 h-10' />
-                                            </li>
-                                            <li>
-                                                <img src={svgIcons.python} alt="Python" className='w-10 h-10' />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                           
-                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
-                            <div className='flex'>
-                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
-                                <a href='https://www.purrrsonality.com/'>
-                                    <img src={purrr} alt='purrr' className='w-45 h-45 rounded-full' />
-                                </a>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
-                                    <p className='text-base font-mono tracking-tighter m-5 mt-10'>Purrrsonality is a fun personality game that tells you what kind of cat you are! Meow ദ്ദി/ᐠ｡‸｡ᐟ\</p>
-                                    <div className='flex justify-center'>
-                                        <a href='#/purrrsonality'>
-                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex justify-right ml-10'>
-                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                            <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                            <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
-                                            <li className='flex items-center w-1/3 justify-center'>
-                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.css} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
-                                            </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div className="box box-content rounded-md p-4 w-250 bg-[#9caf88]">
-                            <div className='flex'>
-                                <div className='rounded-full bg-[#fff9f0] w-50 h-50 flex justify-center items-center'>
-                                    <img src={logo} alt='web' className='w-70 h-70 mt-5 rounded-full' />
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 flex flex-col justify-right ml-20'>
-                                    <p className='text-base font-mono tracking-tighter m-5 mb-2 mt-6'>This is my personal website where I showcase my projects, share inspiration, and give you a glimpse into who I am, all while keeping things creative and fun!</p>
-                                    <div className='flex justify-center'>
-                                        <a href='#/website'>
-                                            <p className='text-xs sm:text-sm font-mono text-[#e17878] font-bold tracking-tighter underline'>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className='box box-content rounded-sm bg-[#fff9f0] w-80 h-50 justify-right ml-10'>
-                                    <div className='flex flex-col ml-20 m-5 mt-8'> 
-                                            <h3 className='text-2xl font-bold mb-2'>Created Using:</h3>
-                                            <ul className='flex flex-wrap mr-7 justify-center text-lg font-mono tracking-tighter'>
-                                            <li className='flex items-center w-1/3 justify-center'>
-                                                <img src={svgIcons.react} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.typescript} alt="React" className='w-10 h-10 mr-2' /> 
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/3 justify-center'>
-                                                <img src={svgIcons.tailwindcss} alt="React" className='w-10 h-10 mr-2' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <img src={svgIcons.github} alt="GitHub" className='w-10 h-10' />
-                                            </li>
-                                            <li className='flex items-center mb-4 w-1/2 justify-center'>
-                                                <img src={svgIcons.git} alt="GitHub" className='w-10 h-10' /> 
-                                            </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                    <section className="grid grid-cols-1 mb-4 gap-0 md:grid-cols-2 ">
+                        <Folder
+                            label="Design Projects"
+                            projects={designProjects}
+                        />
+
+                        <Folder
+                            label="SWE Projects"
+                            projects={codeProjects}
+                        />
+                    </section>
                 </div>
             </main>
+
             <Footer />
         </div>
-    )
-}
+    );
+};
 
 export default Dev;

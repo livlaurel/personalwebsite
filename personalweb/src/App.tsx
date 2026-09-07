@@ -8,6 +8,7 @@ import Purrr from './pages/purrr.tsx';
 import Web from './pages/web.tsx';
 import Booth from './pages/booth.tsx'
 import Sprint from './pages/sprint.tsx'
+import PyTexas from './pages/pytexas.tsx'
 
 function App(){
   return(
@@ -22,6 +23,7 @@ function App(){
         <Route path="/website" element={<Web />} />
         <Route path="/boothbuddy" element={<Booth />} />
         <Route path="/sprint" element={<Sprint />} />
+        <Route path="/pytexas" element={<PyTexas />} />
       </Routes>
     </HashRouter>
   )

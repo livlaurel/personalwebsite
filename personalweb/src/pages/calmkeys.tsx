@@ -5,88 +5,128 @@ import quote from '../video/ckdemo_quote.mp4';
 
 const CalmKeys = () => {
     return (
-        <div className='flex flex-col h-screen'>
+        <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="bg-[#fff9f0] flex-grow">
-              <div className='flex flex-col h-[500px] overflow-y-auto'>
-                <div className='flex flex-col justify-start items-center'>
-                    <img src={calmkeys} alt='calmkeys' className='w-90 h-40' />
-                    <p className='font-mono font-medium tracking-tighter'>A Relaxing Typing Game for Focused Practice</p>
-                </div>
 
+            <main className="flex-grow bg-[#fff9f0]">
+                <div className="max-w-5xl mx-auto px-6 lg:px-10">
+                    <section className="py-12 border-b border-[#d8d2c7] text-center">
+                        <img
+                            src={calmkeys}
+                            alt="CalmKeys"
+                            className="w-52 h-auto mb-4 mx-auto"
+                        />
 
-                <div className="flex flex-col justify-start items-left ml-20 mr-20 mt-15">
-                    <h2 className="text-5xl font-stretch-expanded font-bubble font-medium mb-5">Overview</h2>
-                    <div className="flex flex-row gap-6 items-start">
-                        <p className="mb-15 text-xl/10 w-1/2">
-                            CalmKeys is an endless typing game I created to help users focus on improving their typing skills at their own pace. Inspired by MonkeyType, I wanted a space where I could slow down and practice typing without the pressure of a timer or high scores. The goal was to create a calm, minimalist environment that encourages typing accuracy over speed.
+                        <p className="text-base text-[#5f6259] mb-3">
+                            A relaxing typing game for focused practice.
                         </p>
-                        <div className="flex items-center justify-center bg-[#9caf88] border-3 border-[#7f966c] w-3/5 p-2 rounded-lg mb-15">
-                            <video width="620" height="540" className='rounded-sm' autoPlay loop muted>
+
+                        <div className="text-sm text-[#778965] font-mono">
+                            React · TypeScript · Tailwind CSS
+                        </div>
+                    </section>
+
+                    <section className="py-10 border-b border-[#d8d2c7]">
+                        <div className="w-4/5 mx-auto border-5 border-[#778965] rounded-sm ">
+                            <video
+                                className="w-full"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            >
                                 <source src={quote} type="video/mp4" />
-                                Your browser does not support the video tag.
+                                Your browser does not support the video.
                             </video>
                         </div>
+                    </section>
+
+                    <section className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-6 py-10 border-b border-[#d8d2c7]">
+                        <h2 className="text-sm font-semibold uppercase tracking-wider text-[#778965]">
+                            About
+                        </h2>
+
+                        <p className="max-w-2xl text-base leading-7 text-[#394a28]">
+                            CalmKeys is a minimalist typing game designed for
+                            slow and focused practice. I was inspired by MonkeyType and 
+                            wanted to create a space where users could improve
+                            their typing without timers or scores.
+                        </p>
+                    </section>
+
+                    <section className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-6 py-10 border-b border-[#d8d2c7]">
+                        <h2 className="text-sm font-semibold uppercase tracking-wider text-[#778965]">
+                            Features
+                        </h2>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-7">
+                            <div>
+                                <h3 className="text-base font-semibold mb-1">
+                                    Endless Practice
+                                </h3>
+                                <p className="text-sm leading-6 text-[#686a62]">
+                                    Practice without timers, limits, or scores.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-base font-semibold mb-1">
+                                    Minimal Interface
+                                </h3>
+                                <p className="text-sm leading-6 text-[#686a62]">
+                                    A simple interface that keeps distractions
+                                    out of the way.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-base font-semibold mb-1">
+                                    Focused Practice
+                                </h3>
+                                <p className="text-sm leading-6 text-[#686a62]">
+                                    Designed around accuracy and comfortable/intentional typing.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-6 py-10 border-b border-[#d8d2c7]">
+                        <h2 className="text-sm font-semibold uppercase tracking-wider text-[#778965]">
+                            Design
+                        </h2>
+
+                        <div>
+                            <p className="max-w-2xl text-base leading-7 text-[#394a28] mb-7">
+                            CalmKeys uses soft colors and a simple layout to create a clean and distraction-free space for users to focus on typing.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section className="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-6 py-10">
+                        <h2 className="text-sm font-semibold uppercase tracking-wider text-[#778965]">
+                            Built With
+                        </h2>
+
+                        <div className="text-sm text-[#394a28]">
+                            React · TypeScript · Tailwind CSS
+                        </div>
+                    </section>
+
+                    <div className="pb-10">
+                        <button
+                            onClick={() => window.history.back()}
+                            className="text-sm text-[#394a28] hover:text-[#e17878] transition-colors"
+                        >
+                            ← Back to Projects
+                        </button>
                     </div>
 
-                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Inspiration</h2>
-                    <p className='mb-15 text-xl/10'>
-                    Typing games often emphasize speed, but I wanted something different. I found myself wanting a tool to practice typing slowly and mindfully—something that didn’t focus on hitting high scores or competing against the clock. This led to the creation of CalmKeys, where the focus is all about typing accurately and comfortably at your own pace.
-                    </p>
-
-                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5 '>What I Built</h2>
-                    <p className='text-xl/10'> 
-                    As the solo developer, I designed the entire experience, from the minimalist interface to the typing functionality.
-                    </p>
-                    <p className='text-xl/10'> 
-                     CalmKeys features:
-                    </p>
-                    <ul className='list-disc marker:text-[#ff7a7a] ml-10 mb-15 text-xl/8'>
-                        <li> <b className='font-semibold'>Endless typing practice</b> – No timers, no scores. Just you and the words.
-                        </li>
-                        <li> <b className='font-semibold'>A clean, calming design</b> – I used Tailwind CSS to keep things simple and soothing.
-                        </li>
-                    </ul>
-
-                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Challenges & Solutions</h2>
-                    <p className='mb-5 text-xl/10'>
-                    Finding the right word sources for the game was one of the biggest hurdles. I experimented with multiple APIs for random word generation, but many of them provided overly long or difficult words that made typing frustrating instead of relaxing. Additionally, I struggled to find an API that had quotes or a word list that matched the zen-like, calming experience I envisioned for CalmKeys.
-                    </p>
-                    <p className='mb-15 text-xl/10'>
-                    To solve this, I manually curated my own word lists and quote collections, carefully selecting words and phrases that felt fitting for the project. This ensured that every word and quote displayed in the game contributes to a smooth and enjoyable typing experience.
-                    </p>
-
-                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Results</h2>
-                    <p className='text-xl/10 mb-3'>
-                    A tool that helps users down and focus on typing more mindfully. The response has been positive, with users appreciating the peaceful vibe and the freedom to type at their own pace.
-                    </p>
-                    <p className='mb-2 text-base/10 font-mono tracking-tighter'>
-                    "I love the simplicity of CalmKeys. It’s a great way to practice typing and I don't have to worry about a timer!" – User feedback
-                    </p>
-                    <p className='mb-15 text-base/5 font-mono tracking-tighter'>
-                    "CalmKeys helped me improve how I type. I feel more comfortable typing at work." – User feedback
-                    </p>
-
-                    <h2 className='text-5xl font-stretch-expanded font-bubble font-medium mb-5'>Key Learnings</h2>
-                    <ul className='list-disc marker:text-[#ff7a7a] ml-10 mb-15 text-xl/8'>
-                        <li>Improved my skills with React and TypeScript.
-                        </li>
-                        <li>Learned how to design for simplicity while still offering a useful experience.
-                        </li>
-                        <li>Gained hands-on experience with Tailwind CSS to build responsive layouts.
-                        </li>
-                    </ul>
-                    <button className="text-m mb-5 pt-3 pb-3 pl-1 pr-1 w-32 text-[#fbf7ed] bg-[#f8a3a3] rounded-lg hover:bg-[#e17878]"
-                        onClick={() => { window.history.back()}} >
-                            ← Back
-                    </button>
                 </div>
-             </div>
-
             </main>
+
             <Footer />
         </div>
-    )
-}
+    );
+};
 
 export default CalmKeys;
