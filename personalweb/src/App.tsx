@@ -10,10 +10,13 @@ import Booth from './pages/booth.tsx'
 import Sprint from './pages/sprint.tsx'
 import PyTexas from './pages/pytexas.tsx'
 import ApartmentPosters from './pages/poster.tsx'
+import ClickSpark from './components/clickspark.tsx';
 
 function App(){
   return(
     <HashRouter>
+      <ClickSpark />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
