@@ -8,6 +8,7 @@ import logo from '../imgs/logo.svg';
 import booth from '../imgs/booth.png';
 import sprint from '../imgs/Sprint.svg';
 import pytexas from '../imgs/forweb.svg';
+import poster23 from '../imgs/poster23.svg'
 
 type Project = {
     name: string;
@@ -55,6 +56,12 @@ const designProjects: Project[] = [
         image: logo,
         href: '#/website',
         type: 'BRANDING',
+    },
+    {
+        name: 'Apartment Posters',
+        image: poster23,
+        href: '#/posters',
+        type: 'POSTER DESIGN',
     },
     {
         name: 'PyTexas 2027',

@@ -9,6 +9,7 @@ import Web from './pages/web.tsx';
 import Booth from './pages/booth.tsx'
 import Sprint from './pages/sprint.tsx'
 import PyTexas from './pages/pytexas.tsx'
+import ApartmentPosters from './pages/poster.tsx'
 
 function App(){
   return(
@@ -24,6 +25,7 @@ function App(){
         <Route path="/boothbuddy" element={<Booth />} />
         <Route path="/sprint" element={<Sprint />} />
         <Route path="/pytexas" element={<PyTexas />} />
+        <Route path="/posters" element={<ApartmentPosters />} />
       </Routes>
     </HashRouter>
   )
