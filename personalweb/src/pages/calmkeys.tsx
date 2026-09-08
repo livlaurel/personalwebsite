@@ -11,11 +11,13 @@ const CalmKeys = () => {
             <main className="flex-grow bg-[#fff9f0]">
                 <div className="max-w-5xl mx-auto px-6 lg:px-10">
                     <section className="py-12 border-b border-[#d8d2c7] text-center">
+                    <a href="https://livlaurel.github.io/CalmKeys/" target="_blank" rel="noopener noreferrer">
                         <img
                             src={calmkeys}
                             alt="CalmKeys"
                             className="w-52 h-auto mb-4 mx-auto"
                         />
+                    </a>
 
                         <p className="text-base text-[#5f6259] mb-3">
                             A relaxing typing game for focused practice.

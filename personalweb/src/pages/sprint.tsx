@@ -11,12 +11,13 @@ const Sprint = () => {
                 <div className="max-w-5xl mx-auto px-6 lg:px-10">
 
                     <section className="py-12 border-b border-[#d8d2c7] text-center">
-                        <img
-                            src={sprint}
-                            alt="Sprint"
-                            className="w-52 h-auto mb-4 mx-auto"
-                        />
-
+                        <a href="https://github.com/livlaurel/Sprint" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={sprint}
+                                alt="Sprint"
+                                className="w-52 h-auto mb-4 mx-auto"
+                            />
+                        </a>
                         <p className="text-base text-[#5f6259] mb-3">
                             Plan Together. Ship Faster.
                         </p>
