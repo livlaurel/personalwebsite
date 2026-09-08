@@ -27,7 +27,7 @@ const Home = () => {
             <Header />
             <main className="bg-[#fff9f0] flex-grow p-7">
                 <section className="container mx-auto">
-                    <h1 className="text-4xl font-bold text-[#1a2411] font-mono tracking-wider text-center">
+                    <h1 className="text-4xl font-bold text-[#394a28] font-mono tracking-wider text-center">
                         Meet Olivia Laurel...
                     </h1>
                     <p className="text-xl mt-3 text-[#7b8f65] font-mono text-center">
