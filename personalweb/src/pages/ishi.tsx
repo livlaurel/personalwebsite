@@ -493,6 +493,12 @@ const Ishi = () => {
                         </p>
                     </section>
 
+                    <div className="pb-8">
+                        <p className="text-xs text-[#85877f]">
+                            © 2026 Olivia Laurel. ISHI is a personal branding concept. All rights reserved.
+                        </p>
+                    </div>
+
                     <div className="pb-12">
                         <button
                             onClick={() => window.history.back()}

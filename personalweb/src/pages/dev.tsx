@@ -71,7 +71,7 @@ const designProjects: Project[] = [
         type: 'LOGO',
     },
     {
-        name: 'Ishi',
+        name: 'ISHI',
         image: ishi,
         href: '#/ishi',
         type: 'BRANDING',
