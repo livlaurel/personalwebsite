@@ -11,6 +11,7 @@ import Sprint from './pages/sprint.tsx'
 import PyTexas from './pages/pytexas.tsx'
 import ApartmentPosters from './pages/poster.tsx'
 import ClickSpark from './components/clickspark.tsx';
+import Ishi from './pages/ishi.tsx';
 
 function App(){
   return(
@@ -29,6 +30,7 @@ function App(){
         <Route path="/sprint" element={<Sprint />} />
         <Route path="/pytexas" element={<PyTexas />} />
         <Route path="/posters" element={<ApartmentPosters />} />
+        <Route path="/ishi" element={<Ishi />} />
       </Routes>
     </HashRouter>
   )

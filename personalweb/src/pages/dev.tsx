@@ -9,6 +9,7 @@ import booth from '../imgs/booth.png';
 import sprint from '../imgs/Sprint.svg';
 import pytexas from '../imgs/forweb.svg';
 import poster23 from '../imgs/poster23.svg'
+import ishi from '../imgs/ishi/ishi_logo.svg'
 
 type Project = {
     name: string;
@@ -68,6 +69,12 @@ const designProjects: Project[] = [
         image: pytexas,
         href: '#/pytexas',
         type: 'LOGO',
+    },
+    {
+        name: 'Ishi',
+        image: ishi,
+        href: '#/ishi',
+        type: 'BRANDING',
     },
 ];
 
