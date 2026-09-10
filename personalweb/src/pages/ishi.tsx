@@ -5,9 +5,11 @@ import Footer from '../components/footer';
 
 import ishiBrand from '../imgs/ishi/ishi_brandlayout.svg';
 import ishiMenu from '../imgs/ishi/menu.svg';
-import ishiTote from '../imgs/ishi/Mockup.png';
 import ishiCards1 from '../imgs/ishi/business-card-mockup-1.png';
 import ishiCards2 from '../imgs/ishi/business-card-mockup-2.png';
+import ishiCoffeeHolder from '../imgs/ishi/cofee.jpg';
+import ishiShoppingBag from '../imgs/ishi/togobag.jpg';
+import ishiTote from '../imgs/ishi/totebag.jpg';
 
 const images = [
     {
@@ -31,14 +33,26 @@ const images = [
     {
         image: ishiMenu,
         title: 'Menu',
-        number: '04',
+        number: '07',
         description: 'The daily ISHI cafe menu w/ seasonal items.',
     },
     {
         image: ishiTote,
         title: 'Tote Bag',
         number: '05',
-        description: 'An idea for ISHI cafe merch.',
+        description: 'An idea for ISHI cafe everyday merch.',
+    },
+    {
+        image: ishiCoffeeHolder,
+        title: 'Coffee Carrier',
+        number: '04',
+        description: 'A branded coffee carrier designed for takeout.',
+    },
+    {
+        image: ishiShoppingBag,
+        title: 'Shopping Bag',
+        number: '06',
+        description: 'Branded packaging for takeaway orders and purchases.',
     },
 ];
 
@@ -81,7 +95,7 @@ const Ishi = () => {
                             </div>
 
                             <p className="text-xs font-mono text-[#778965]">
-                                01 / 05
+                                01 / 07
                             </p>
                         </div>
 
@@ -206,7 +220,7 @@ const Ishi = () => {
                             </p>
 
                             <p className="text-xs font-mono text-[#778965]">
-                                04 APPLICATIONS
+                                06 APPLICATIONS
                             </p>
                         </div>
 
@@ -320,7 +334,7 @@ const Ishi = () => {
                             items-start
                         ">
 
-                            {[images[3], images[4]].map((item) => (
+                            {[images[5], images[4],images[6], images[3]].map((item) => (
                                 <button
                                     key={item.number}
                                     onClick={() => setSelectedImage(item)}
@@ -628,7 +642,7 @@ const Ishi = () => {
                                 </span>
 
                                 <span className="text-xs font-mono opacity-50">
-                                    {selectedImage.number} / 05
+                                    {selectedImage.number} / 07
                                 </span>
                             </div>
                         </motion.div>
