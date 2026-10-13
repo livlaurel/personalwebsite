@@ -58,27 +58,27 @@ const phases: Phase[] = [
             {
                 image: pytexasGeometry,
                 title: 'Minimal Mark',
-                description: 'A simpler direction focused on the symbol and wordmark.',
+                description: 'A simpler idea focused on the symbol/wordmark.',
             },
             {
                 image: pytexasPython,
                 title: 'Python-Inspired',
-                description: 'An early concept connecting the cactus with the Python community.',
+                description: 'An idea combining the cactus with the Python logo.',
             },
             {
                 image: pytexasTall,
                 title: 'Cactus Badge',
-                description: 'A badge-style direction pairing the conference name with the cactus.',
+                description: 'A badge-style direction combining the conference name with the cactus.',
             },
             {
                 image: pytexasMosaic,
                 title: 'Geometric Cactus',
-                description: 'A direction built from angular shapes and color.',
+                description: 'An idea built from triangles and color.',
             },
             {
                 image: pytexasBlackWhite,
                 title: 'Black and White',
-                description: 'An early exploration of contrast and a simplified cactus mark.',
+                description: 'An exploration of contrast and a simplified cactus mark.',
             },
             {
                 image: pytexasWave,
@@ -99,17 +99,17 @@ const phases: Phase[] = [
             {
                 image: agaveText,
                 title: 'Agave with Text',
-                description: 'The agave mark paired with the conference name.',
+                description: 'The agave mark paired with the conference name in the cactus.',
             },
             {
                 image: agaveNoText,
-                title: 'Agave Symbol',
-                description: 'The mark on its own, to check how well it reads without text.',
+                title: 'Agave + Cactus',
+                description: 'The logo on its own to check how well it reads without text.',
             },
             {
                 image: orangeAgave,
-                title: 'Orange Agave',
-                description: 'A warmer color treatment of the agave direction.',
+                title: 'Orange Agave + Smaller Sun',
+                description: 'A warmer color of the agave direction and a smaller sun.',
             },
         ],
     },
@@ -125,12 +125,12 @@ const phases: Phase[] = [
             {
                 image: ideaMain,
                 title: 'Main Concept',
-                description: 'The strongest idea from the first two rounds, refined.',
+                description: 'The strongest idea from the first two rounds.',
             },
             {
                 image: pytexasMockups,
-                title: 'Three Ideas, Three Mockups',
-                description: 'The three main concepts, mockups, and HEX colors side by side.',
+                title: 'Three Ideas, Three Wordmarks',
+                description: 'The three main concepts, wordmarks, and HEX colors side by side.',
             },
         ],
     },
@@ -145,12 +145,12 @@ const phases: Phase[] = [
         items: [
             {
                 image: pytexasDarkPurple,
-                title: 'Purple',
+                title: 'Purple Ver.',
                 description: 'The final logo in a purple variation.',
             },
             {
                 image: pytexasPink,
-                title: 'Pink',
+                title: 'Pink Ver.',
                 description: 'The final logo in a pink variation.',
             },
             {
@@ -196,7 +196,7 @@ const phases: Phase[] = [
             {
                 image: pytexasPinkWordmark,
                 title: 'Alternate Wordmark',
-                description: 'An alternate dark pink color treatment.',
+                description: 'An alternate pink color.',
                 wordmark: true,
             },
             {
