@@ -7,7 +7,7 @@ import purrr from '../imgs/Purrrsonality.png';
 import logo from '../imgs/logo.svg';
 import booth from '../imgs/booth.png';
 import sprint from '../imgs/Sprint.svg';
-import pytexas from '../imgs/forweb.svg';
+import pytexas from '../imgs/pytexas/pytexas_wavesun.svg';
 import poster23 from '../imgs/poster23.svg'
 import ishi from '../imgs/ishi/ishi_logo.svg'
 
@@ -139,7 +139,11 @@ const ProjectCard = ({
                     <img
                         src={project.image}
                         alt={project.name}
-                        className="h-full w-full object-contain p-4"
+                        className={`h-full w-full object-contain ${
+                            ['PyTexas 2027', 'Personal Website', 'Personal Brand'].includes(project.name)
+                              ? 'scale-[1.5]'
+                              : 'p-4'
+                          }`}
                     />
                 </div>
 
